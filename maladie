@@ -1,0 +1,67 @@
+infos = dict()
+infos["hypermétropie"] = {
+  "definition" : "L'hypermétropie est un trouble fréquent de la réfraction oculaire, 
+    qui correspond le plus souvent à un axe antéro-postérieur de l'œil trop court. 
+    L'hypermétropie représente en quelque sorte l'inverse de la myopie. En effet, 
+    l’hypermétrope distingue mal les objets rapprochés mais a une meilleure vision de loin.",
+  "causes" : "Les rayons lumineux convergent en arrière de la rétine,\
+    d'où une vision floue de près alors que la vision de loin est correcte. \
+    Dans d'autres cas, un cristallin trop plat ou une cornée pas assez bombée \
+    sont en cause car ils focalisent mal les images. \
+    Coupe d'un œil normal L'image se forme au niveau de la rétine\
+    Coupe d'un œil hypermétrope L'image se forme en arrière de la rétine",
+  "symptomes" : "Des difficultés de vision des objets proches /
+    Une fatigue oculaire /
+    Des maux de tête"
+}
+infos["glaucomes"] = {
+  "definition" : "Le glaucome est une maladie des yeux qui entraîne la 
+    destruction progressive du nerf et peut aboutir à la cécité.le glaucome
+    se définit par une augmentation de la pression à l'intérieur de l'œil. 
+    Cette augmentation de pression entraîne des lésions de la rétine qui 
+    elles-mêmes provoquent des troubles de la vision allant de la baisse 
+    modérée de l'acuité visuelle à la perte de la vue.On distingue les 
+    glaucomes primitifs des glaucomes secondaires selon leur cause.",
+ 
+  "symptomes" : "L'œil est rouge, douloureux avec une chute importante /
+    de l'acuité visuelle (l'œil perçoit à peine la lumière) /Les douleurs
+    sont violentes, paroxystiques sur un fond douloureux permanent/ Elles
+    siègent au dessus et autour de l'orbite et se propagent souvent à 
+    distance vers l'arrière du crâne / Larmoiement et crainte de la 
+    lumière sont constants / D'autres signes moins spécifiques comme 
+    les nausées et vomissements sont fréquemment associés."
+}
+infos["keratocone"] = {
+  "definition" : "La cornée est le revêtement transparent de l’iris et de la pupille de l’œil. Normalement, elle a une forme arrondie régulière.Chez les personnes atteintes d’un kératocône (de 'kératos' pour cornée et conus' pour cône), la cornée se déforme et s’amincit progressivement, \
+    perdant son allure sphérique pour prendre celle d’un cône irrégulier.",
+
+  "symptomes" : "Une sensibilité excessive à la lumière (photophobie) /
+    Une irritation oculaire (yeux larmoyants)"
+}
+infos["Astigmatisme "] = {
+  "definition" : "Une personne est astigmate lorsque la vision des lignes horizontales 
+  et verticales, de près comme de loin, est floue. Le plus souvent, c'est parce que la 
+  cornée est légèrement déformée, voire bosselée, et donc irrégulière.",
+  
+  "symptomes" : "Maux de tête / picotements des yeux et vision floue
+}
+infos["chalazion"] = {
+  "definition" : "Vous avez une boule rouge, douloureuse et gênante dans l’épaisseur de la paupière
+    ? C’est probablement un chalazion. Il ne faut pas confondre le chalazion avec l'orgelet : le chalazion 
+    se trouve généralement dans l’épaisseur de la paupière, alors que l’orgelet se développe sur le bord 
+    de la paupière, à la racine des cils,
+  "symptomes" : "Présence d’une boule (kyste) sur la paupière /
+    Paupière enflammée qui tombe sur l’œil /
+    Infection légère de la conjonctive (fine membrane située à la surface du blanc de l’œil) /
+    Douleur et sensation de grains de sable dans l’œil /
+    Sensibilité accrue à la lumière /
+    Larmoiement lorsque le chalazion est interne /
+    Vue trouble lorsque le chalazion est important
+}
+infos["Orgelet "] = {
+L'orgelet est un furoncle (et donc une infection) d'un cil de la paupière. 
+    Il est toujours localisé sur le bord et non dans la masse de la paupière comme un chalazion 
+    (plus fréquent que l'orgelet). 
+  
+  "symptomes" : Rougeur / Douleur /Chaleur / Bouton purulent
+}

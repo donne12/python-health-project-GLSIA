@@ -16,12 +16,13 @@ while tries_flag != "Close the program" :
         print("|Entrer 1 pour  la gestion des patients			|\n|Entrer 2 pour la gestion des maladies			|")
         print("--------------------------------------------------")
         choix = int( input("Enter votre choix : "))
-        if choix == 1 :																			#Admin mode
+        if choix == 1 :																			
             print("*****************************************\n|         Gestion des patient         |\n*****************************************")
             Password = input("votre mots de passe svp : ")
             while True :
                         
                 if Password == "1234" :
+                    
                     print("------------------------------------------------------------------")
                     print("|POur ajouter un patient: Entrer 1	  	                          |")
                     print("|POur afficher la liste des patients: Entrer 2	  	              |")
@@ -35,14 +36,15 @@ while tries_flag != "Close the program" :
                     Options = Options.upper()
                             
                     if Options == "1" :	 
+                            _ = os.system('cls')
                             print("Enregistrons un patient...")
                             nom = input("Entrer le nom du patient: ")
                             prenom = input("Entrer le prenom du patient: ")
                             adresse = input("Entrer l'adresse du patient: ")
                             age = int (input("Entrer l'âge du patient: "))
                             try:
-                                patient = patient(nom, prenom, adresse, age)
-                                patient.create()
+                                pat = patient(nom, prenom, adresse, age)
+                                pat.create()
                                 print("----------------------Patient ajouter avec success----------------------")
                             except :
                                 print("L'id du patien doit etre un entier ")													#Admin mode --> Pateints Management
@@ -51,6 +53,7 @@ while tries_flag != "Close the program" :
                                             
                     elif Options == "2" :										
                         # try :
+                            _ = os.system('cls')
                             print("Liste des patient...")	
                             # patient_ID = int(input("Enter l'ID du patient: "))
                             data = lire("fichier.json")
@@ -67,7 +70,8 @@ while tries_flag != "Close the program" :
                         #     print("pas conpris")
                                     
                     elif Options == "3" :										
-                                try :		
+                                try :
+                                    _ = os.system('cls')		
                                     print("Consultation...")
                                     nom = input("Entrer le nom du patient: ")
                                     prenom = input("Entrer le prenom du patient: ")
@@ -77,7 +81,8 @@ while tries_flag != "Close the program" :
                                     print("patient  introuvable")
                     
                     elif Options == "4" :										
-                                try :		
+                                try :
+                                    _ = os.system('cls')	
                                     print("Analyse ...")
                                     nom = input("Entrer le nom du patient: ")
                                     prenom = input("Entrer le prenom du patient: ")
@@ -85,8 +90,10 @@ while tries_flag != "Close the program" :
                                     p1.AnalyseRefractometre(nom,prenom)
                                 except :
                                     print("patient  introuvable")
+                                    
                     elif Options == "5" :										
-                                try :		
+                                try :
+                                    _ = os.system('cls')		
                                     print("Liste  des consultation...")
                                     nom = input("Entrer le nom du patient: ")
                                     prenom = input("Entrer le prenom du patient: ")
@@ -95,7 +102,8 @@ while tries_flag != "Close the program" :
                                 except :
                                     print("patient  introuvable")
                     elif Options == "6" :										
-                                try :		
+                                try :	
+                                    _ = os.system('cls')	
                                     print("Liste des analyse..")
                                     nom = input("Entrer le nom du patient: ")
                                     prenom = input("Entrer le prenom du patient: ")
@@ -119,13 +127,13 @@ while tries_flag != "Close the program" :
                         tries_flag = "Arrêt du programme"
                         break
                                     
-        if choix == 2 :																			#Admin mode
+        if choix == 2 :																			
             print("*****************************************\n|         Gestion des Maladies         |\n*****************************************")
             Password = input("votre mots de passe svp : ")
             while True :
                         
                 if Password == "123" :
-                    print("------------------------------------------------------------------")
+                    print("-------------------------------------------------------------------")
                     print("|POur ajouter une maladie: Entrer 1	  	                          |")
                     print("|POur afficher la liste des maladie: Entrer 2	  	              |")
                     print("|pour revenir en arrière entrer E                                  |")
@@ -147,17 +155,15 @@ while tries_flag != "Close the program" :
                                 print("L'id du patien doit etre un entier ")	
                     elif Options == "2" :										
                         # try :
-                            print("Liste des patient...")	
+                            print("Liste des Maladies...")	
                             # patient_ID = int(input("Enter l'ID du patient: "))
                             data = lire("fichier.json")
-                            b= data["Patient"]
-                            for pat in  b:
-                                print("\n patient  numero             : ",pat["numero"])
-                                print("\nnom  du  patient             : ",pat["nom"])
-                                print("\nprenom  du  patient          : ",pat["prenom"])
-                                print("\nage du patient               : ",pat["age"])
-                                print("\nadress du patient            : ",pat["adresse"])
-                                print("---------------------------------------")
+                            b= data["Maladie"]
+                            for mal in  b:
+                                print("\nnom  de la maladie: ",mal["nom"])
+                                print("\n-------------description de la maladie---------\n ",mal["description"])
+                                print("\n-------------symptomne de la maladie-----------\n ",mal["sympto"])
+                                print("--------------------------------------------------")
                     elif Options == "E" :										
                                 break
                     
@@ -172,7 +178,7 @@ while tries_flag != "Close the program" :
                         tries_flag = "Arrêt du programme"
                         break        
         
-        # elif AdminOptions == "E" :															#Back
+        # elif AdminOptions == "E" :															
         #     break
         
         # else :

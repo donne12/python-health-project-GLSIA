@@ -1,93 +1,27 @@
 {
     "Patient": [
+      
         {
             "numero": 1,
-            "nom": "eda",
-            "prenom": "ed",
-            "adresse": "adidogomé",
-            "age": 18,
-            "consultations": [],
-            "pathologie": []
-        },
-        {
-            "numero": 2,
-            "nom": "ed",
-            "prenom": "ed",
-            "adresse": "adidogomé",
-            "age": 18,
-            "consultations": [],
-            "pathologie": []
-        },
-        {
-            "numero": 3,
-            "nom": "edz",
-            "prenom": "ed",
-            "adresse": "adidogomé",
-            "age": 18,
-            "consultations": {
-                "azdzza": {}
-            },
-            "pathologie": []
-        },
-        {
-            "numero": 6,
-            "nom": "edeea",
-            "prenom": "ed",
-            "adresse": "adidogomé",
-            "age": 18,
-            "consultations": [
-                {
-                    "date": "2022-01-11 00:18:42.618938",
-                    "douleur": false,
-                    "polype": false,
-                    "lesion_cervicale": false,
-                    "leucorrhe": false
-                }
-            ]
-        },
-        {
-            "numero": 7,
             "nom": "abalo",
-            "prenom": "za",
+            "prenom": "kiko",
             "adresse": "adidogomé",
             "age": 18,
             "consultations": {
-                "2022-01-16 07:45:46.031664": {
-                    "sphere_loin": 4
-                },
-                "2022-01-16 07:45:48.264046": {
-                    "sphere_loin": 7
-                },
-                "2022-01-16 07:46:35.635021": {
-                    "sphere_loin": 4
-                },
-                "2022-01-16 07:49:42.781727": {
-                    "sphere_loin": 5
-                },
-                "2022-01-16 07:49:46.482726": {
-                    "sphere_loin": 7
-                },
-                "aed": {
-                    "sphere_loin": 5,
-                    "cylindre_loin": 5,
-                    "axe_loin": 5,
-                    "sphere_pres": 5,
-                    "cylinfre_pres": 5,
-                    "axe_pres": 5,
-                    "date_analyse": "2022-01-23 10:34:42.295627"
-                }
-            }
-        },
-        {
-            "numero": 8,
-            "nom": "abal4o",
-            "prenom": "za",
-            "adresse": "adidogomé",
-            "age": 18,
-            "consultations": {
-                "01/23/2022": {
+                "01/23/2021": {
                     "acuiteVisuelleDroite": "5",
                     "acuiteVisuelleGauche": "7",
+                    "douleurGauche": false,
+                    "douleurDroite": false,
+                    "rougeGauche": false,
+                    "rougeDroite": false,
+                    "gonflementGauche": false,
+                    "gouflementDroite": false,
+                    "traitement": false
+                },
+                "01/24/2022": {
+                    "acuiteVisuelleDroite": "1",
+                    "acuiteVisuelleGauche": "2",
                     "douleurGauche": false,
                     "douleurDroite": false,
                     "rougeGauche": false,
@@ -119,37 +53,78 @@
             }
         },
         {
-            "numero": 9,
-            "nom": "adjaro",
-            "prenom": "edouard",
+            "numero": 2,
+            "nom": "lare",
+            "prenom": "bobo",
             "adresse": "lome",
             "age": 14,
-            "consultations": {},
+            "consultations": {
+                "01/24/2022": {
+                    "acuiteVisuelleDroite": "20/20",
+                    "acuiteVisuelleGauche": "20/20",
+                    "douleurGauche": true,
+                    "douleurDroite": true,
+                    "rougeGauche": true,
+                    "rougeDroite": false,
+                    "gonflementGauche": false,
+                    "gouflementDroite": false,
+                    "traitement": false
+                }
+            },
             "analyse": {}
         }
     ],
     "Maladie": [
         {
-            "nom": "Abalo",
-            "description": "za",
-            "sympto": {}
-        },
-        {
             "nom": "hypermétropie",
-            "description": "L'hypermétropie est un trouble fréquent de la réfraction oculaire, qui correspond le plus souvent à un axe antéro-postérieur de l'œil trop court. L'hypermétropie représente en quelque sorte l'inverse de la myopie. En effet, l’hypermétrope distingue mal les objets rapprochés mais a une meilleure vision de loin.",
-            "sympto": {}
+            "description": "L'hypermétropie est un trouble fréquent de la réfraction oculaire,     qui correspond le plus souvent à un axe antéro-postérieur de l'œil trop court.     L'hypermétropie représente en quelque sorte l'inverse de la myopie. En effet,     l’hypermétrope distingue mal les objets rapprochés mais a une meilleure vision de loin.",
+            "sympto": [
+                "Des difficultés de vision des objets proches ",
+                "     Une fatigue oculaire ",
+                "     Des maux de tête"
+            ]
         },
         {
             "nom": "glaucomes",
-            "description": "Le glaucome est une maladie des yeux qui entraîne la     destruction progressive du nerf et peut aboutir à la cécité",
-            "sympto": "L'œil est rouge, douloureux avec une chute importante     de l'acuité visuelle (l'œil perçoit à peine la lumière) /Les douleurs     sont violentes, paroxystiques sur un fond douloureux permanent"
+            "description": "Le glaucome est une maladie des yeux qui entraîne la     destruction progressive du nerf et peut aboutir à la cécité.le glaucome     se définit par une augmentation de la pression à l'intérieur de l'œil.     Cette augmentation de pression entraîne des lésions de la rétine qui     elles-mêmes provoquent des troubles de la vision allant de la baisse     modérée de l'acuité visuelle à la perte de la vue.On distingue les     glaucomes primitifs des glaucomes secondaires selon leur cause",
+            "sympto": [
+                "L'œil est rouge, douloureux avec une chute importante ",
+                "     de l'acuité visuelle (l'œil perçoit à peine la lumière) ",
+                "Les douleurs     sont violentes, paroxystiques sur un fond douloureux permanent",
+                " Elles     siègent au dessus et autour de l'orbite et se propagent souvent à     distance vers l'arrière du crâne ",
+                " Larmoiement et crainte de la     lumière sont constants ",
+                " D'autres signes moins spécifiques comme     les nausées et vomissements sont fréquemment associés."
+            ]
         },
         {
-            "nom": "glaucomes2",
-            "description": "Le glaucome est une maladie des yeux qui entraîne la     destruction progressive du nerf et peut aboutir à la cécité",
+            "nom": "keratocone",
+            "description": "La cornée est le revêtement transparent de l’iris et de la pupille de l’œil. Normalement, elle a une forme arrondie régulière.Chez les personnes atteintes d’un kératocône (de 'kératos' pour cornée et conus' pour cône), la cornée se déforme et s’amincit progressivement, \\     perdant son allure sphérique pour prendre celle d’un cône irrégulier",
             "sympto": [
-                "L'œil est rouge, douloureux avec une chute importante     de l'acuité visuelle (l'œil perçoit à peine la lumière) ",
-                "Les douleurs     sont violentes, paroxystiques sur un fond douloureux permanent"
+                "Une sensibilité excessive à la lumière (photophobie) ",
+                "     Une irritation oculaire (yeux larmoyants)"
+            ]
+        },
+        {
+            "nom": "Astigmatisme",
+            "description": "Vous avez une boule rouge, douloureuse et gênante dans l’épaisseur de la paupière     ? C’est probablement un chalazion. Il ne faut pas confondre le chalazion avec l'orgelet : le chalazion     se trouve généralement dans l’épaisseur de la paupière, alors que l’orgelet se développe sur le bord     de la paupière, à la racine des cils",
+            "sympto": [
+                "Présence d’une boule (kyste) sur la paupière ",
+                "     Paupière enflammée qui tombe sur l’œil ",
+                "     Infection légère de la conjonctive (fine membrane située à la surface du blanc de l’œil) ",
+                "     Douleur et sensation de grains de sable dans l’œil ",
+                "     Sensibilité accrue à la lumière ",
+                "     Larmoiement lorsque le chalazion est interne ",
+                "     Vue trouble lorsque le chalazion est important"
+            ]
+        },
+        {
+            "nom": "Orgelet",
+            "description": "L'orgelet est un furoncle (et donc une infection) d'un cil de la paupière.     Il est toujours localisé sur le bord et non dans la masse de la paupière comme un chalazion     (plus fréquent que l'orgelet)",
+            "sympto": [
+                "Rougeur ",
+                " Douleur ",
+                "Chaleur ",
+                " Bouton purulent"
             ]
         }
     ]

@@ -92,9 +92,9 @@ class patient:
                         self.prenom = patient["prenom"]
                         self.adresse = patient["adresse"]
                         self.age = patient["age"]
-                        self.consultations = patient["consulations"]
-            print("consultation de {} {}...".format(self.nom, self.prenom))
-            print("\n")
+                        self.consultations = patient["consultations"]
+        print("liste des consultation de {} {}...".format(self.nom, self.prenom))
+        print("\n")
 
         consul={
                  
@@ -135,10 +135,9 @@ class patient:
                         self.prenom = patient["prenom"]
                         self.adresse = patient["adresse"]
                         self.age = patient["age"]
-                        self.consultations = patient["consulations"]
-            print("Analyse  de {} {}...".format(self.nom, self.prenom))
-            print("\n")
-
+                        self.analyse = patient["analyse"]
+        print("Analyse  de {} {}...".format(self.nom, self.prenom))
+        print("\n")
         print("------------------------------------------------------")
         print("\n")
         print("Analyse oeil gauche ")
@@ -244,12 +243,14 @@ class patient:
         ecrire("fichier.json",data)
     
 
-p1= patient("A","z","a",18) 
-# # p1.consulter()
-# print(p1)
-p1.afficherConsultation("Abal4o","za")
-# p1.afficherConsultation()
-# p1.afficherAnalyse()
-# # #p1.AnalyseRefractometre()
-# # p1.consulter()
+#
+# p1= patient("A","z","a",18) 
+# p1.create()
+# #p1.consulter("Abal4o","za")
+# # print(p1)
+# # p1.afficherConsultation("Abal4o","za")
+# # p1.afficherConsultation()
+# # p1.afficherAnalyse()
+# p1.AnalyseRefractometre("Abalo","za")
+# # # p1.consulter()
 # # # patient.consulter("ed","ed")
