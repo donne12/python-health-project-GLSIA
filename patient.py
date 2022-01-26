@@ -228,8 +228,7 @@ class patient:
             else:
                    print("Erreur de creation du patient, veuillez reessayer !!")
 
-    def update(self):
-      
+    def update(self):  
         data = lire("fichier.json")
         data["Patient"][self.numero] = {
             "numero": self.numero,
@@ -237,8 +236,7 @@ class patient:
             "prenom": self.prenom,
             "adresse": self.adresse,
             "age": self.age,
-            "consultations": self.consultations,
-            
+            "consultations": self.consultations,    
         }
         ecrire("fichier.json",data)
     

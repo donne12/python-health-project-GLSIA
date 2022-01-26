@@ -2,32 +2,23 @@ from operateur import *
 
 
 class Maladie:
-    def __init__(self, nom: str, description=" " ,sympto=[ ] ):
+    def __init__(self, nom: str, description=" " ,sympto=[ ],id : int =0 ):
+        self.nom = nom
+        self.description = description  
+        self.sympto =  sympto
+        if id == 0:
+            self.id = lire('fichier.json')['Maladie'][-1]['numero']+1
+        self.id = 1
         
-            self.nom = nom
-            self.description = description  
-            self.sympto =  sympto
-                   
-
-    # def __str__(self):
-    #     return "{0} : {1}\nSymptôme: {2}\nTraitement: {3}\n".format(self.nom, self.description, ", ".join(self.sympto) ,self.traitement)
-
-    # def __del__(self):
-    #     data = lire("fichier.json")
-    #     del data["Maladie"][
-    #         data["Maladie"].index({
-    #             "nom" : self.nom,
-    #             "description" : self.description,
-    #             "traitement" : self.traitement,
-    #             "sympto": self.sympto
-    #         })
-    #     ]
-    #     ecrire("fichier.json",data)
-    #     print("Patient supprimer avec succes !")
+    def __init__(self):
+        self.nom = ''
+        self.description = ''
+        self.sympto = ''
+        self.id = 0
 
     def create(self):
         data = lire("fichier.json")
-        if(self.verification()==False):
+        if(self.ifExists()==False):
             data["Maladie"].append(
                 {
                     "nom" : self.nom,
@@ -37,90 +28,69 @@ class Maladie:
             )
             ecrire("fichier.json",data)
         else:
-                   print("Cette maladie existe deja, veuillez reessayer !!")
+            print("Cette maladie existe déjà, veuillez reessayer !!")
 
-    def verification(obj):
-        data = lire("fichier.json")
-        b= data["Maladie"]
-        for maladie in  b:
-                if((maladie["nom"]==obj.nom)):
-                    return True
+    # Méthode qui vérifie si une maladie est déjç repertoriée
+    def ifExists(self):
+        for maladie in  lire("fichier.json")["Maladie"]:
+            if(maladie["id"] == self.id):
+                return True
         return False
     
-    # def AddSymptome(self):
-    #     print("Symptome  de :{}...".format(self.nom, ))
-    #     print("\n")
-    #     symptome={
-                    
-    #                 "sphere_loin":    int(input("Entrez la valeur de la sphère lointaine : ")),       
-    #                 "cylindre_loin":   int(input("Entrez la valeur du cylindre lointain : ")),       
-    #                 "axe_loin":  int(input("Entrez la valeur de l'axe lointain : ")),       
-    #                 "sphere_pres": int(input("Entrez la valeur de la sphère de près : ")),       
-    #                 "cylinfre_pres": int(input("Entrez la valeur du cylindre de près : ")),       
-    #                 "axe_pres": int(input("Entrez la valeur de l'axe de près : ")), 
-
-    #                }
-    #     data = lire("fichier.json")
-    #     b = data["Maladie"]
-    #     for maladie in  b:
-    #         if((maladie["nom"]== self.nom)):
-    #             maladie["symptome"]=symptome          
-    #     ecrire("fichier.json",data)
-    #     print(self)
+    # Méthode qui retourne la liste des maladies avec leurs symptômes
+    def listMaladies():
+        maladies = lire('fichier.json')['Maladie']
+        for maladie in maladies:
+            print(str(maladie['nom'].upper()))
+            print('Ses symptômes sont: ')
+            for symptome in maladie["sympto"]:
+                print("\t-"+str(symptome))
+            print('---------------------------------------------------------------------------------\n')
+        
+    # Méthode de récupération d'une maladie
+    # Elle retourne un dictionnaire
+    def getMaladie(id : int):
+        maladies = lire('fichier.json')['Maladie']
+        for maladie in maladies:
+            if maladie["id"] == id:
+                return maladie
+        return None
     
-    # def ModMaladie(self, nom: str, ):
-    #     self.nom = nom 
-    #     data = lire("fichier.json")
-    #     if(self.verification()==False):
-    #         b= data["Maladie"]
-    #         for maladie in b:
-    #             if(maladie[])
-    #         ecrire("fichier.json",data)
-    #     else:
-    #                print("Cette maladie existe deja, veuillez reessayer !!")
+        
+    def updateMaladie(self):
+        if self.ifExists() == True:
+            try:
+                data = lire('fichier.json')
+                maladies = data['Maladie']
+                for maladie in maladies:
+                    if maladie['id'] == self.id:
+                        print(str(maladie['id']))
+                        maladie['nom'] = self.nom
+                        maladie['description'] = self.description
+                        maladie['sympto'] = self.sympto
+                ecrire('fichier.json',data)
+                print('Modification appliquées avec succès :-)')
+            except:
+                return print("Une erreur s'est produite durant l'opération :-( ")
+        
+    def toMaladie(args):
+        try:
+            maladie = Maladie() 
+            maladie.id = args['id']
+            maladie.nom = args['nom']       
+            maladie.description = args['description']       
+            maladie.sympto = args['sympto']    
+            return maladie 
+        except:
+            return print("Le type de donnée n'est pas correcte")
+                
+        
+maladie = Maladie.toMaladie(Maladie.getMaladie(1))
+maladie.nom = "hypermétropie"
+# maladie.nom = input("Entrez le nouveau nom de la maladie: ")
+maladie.updateMaladie()
 
-
-    # def find(name: str):
-    #     data = lire("fichier.json")
-    #     for index,maladies in enumerate(data["Patient"]):
-    #         for key in maladies:
-    #             if name.lower() == key.lower():
-    #                 nom = data["Maladie"][index]["nom"]
-    #                 description = data["Maladie"][index]["description"]
-    #                 sympto = data["Maladie"][index]["sympto"]
-    #                 traitement = data["Maladie"][index]["traitement"]
-    #                 return Maladie(nom,description,sympto,traitement)
-    #     return None
-
-    #  def update(self):
-    #     data = lire("fichier.json")
-    #     data["Maladie"][
-    #         data["Maladie"].index({
-    #             "nom" : self.nom,
-    #             "description" : self.description,
-    #             "traitement" : self.traitement,
-    #             "sympto": self.sympto
-    #         })
-    #     ] = {
-    #         "nom" : self.nom,
-    #         "description" : self.description,
-    #         "traitement" : self.traitement,
-    #         "sympto": self.sympto
-    #     }
-    #     ecrire("fichier.json",data)
-
-    # def search(recherche: str=''):
-    #     data = lire("fichier.json")
-    #     size = len(data["Maladie"])
-    #     for index in range(size):
-    #         m = Maladie.find(data["Maladie"][index]["nom"])
-    #         if recherche.lower() in m.nom.lower():
-    #             print(m)
-
-# p1= Maladie("abcd","") 
-# p1.create()
-# p1.AddSymptome()
-# p1.AddSymptome()
-# p1.AddSymptome()
-# p1= Maladie("abcd")
-# p1.AddSymptome() 
+if not maladie.ifExists():
+    print('dfdfgfg')
+else:
+    print('boooom')

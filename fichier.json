@@ -1,6 +1,5 @@
 {
     "Patient": [
-      
         {
             "numero": 1,
             "nom": "abalo",
@@ -76,55 +75,60 @@
     ],
     "Maladie": [
         {
+            "id": 1,
             "nom": "hypermétropie",
             "description": "L'hypermétropie est un trouble fréquent de la réfraction oculaire,     qui correspond le plus souvent à un axe antéro-postérieur de l'œil trop court.     L'hypermétropie représente en quelque sorte l'inverse de la myopie. En effet,     l’hypermétrope distingue mal les objets rapprochés mais a une meilleure vision de loin.",
             "sympto": [
                 "Des difficultés de vision des objets proches ",
-                "     Une fatigue oculaire ",
-                "     Des maux de tête"
+                "Une fatigue oculaire ",
+                "Des maux de tête"
             ]
         },
         {
+            "id": 2,
             "nom": "glaucomes",
-            "description": "Le glaucome est une maladie des yeux qui entraîne la     destruction progressive du nerf et peut aboutir à la cécité.le glaucome     se définit par une augmentation de la pression à l'intérieur de l'œil.     Cette augmentation de pression entraîne des lésions de la rétine qui     elles-mêmes provoquent des troubles de la vision allant de la baisse     modérée de l'acuité visuelle à la perte de la vue.On distingue les     glaucomes primitifs des glaucomes secondaires selon leur cause",
+            "description": "Le glaucome est une maladie des yeux qui entraîne la destruction progressive du nerf et peut aboutir à la cécité.le glaucome se définit par une augmentation de la pression à l'intérieur de l'œil. Cette augmentation de pression entraîne des lésions de la rétine qui elles-mêmes provoquent des troubles de la vision allant de la baisse modérée de l'acuité visuelle à la perte de la vue.On distingue les glaucomes primitifs des glaucomes secondaires selon leur cause",
             "sympto": [
                 "L'œil est rouge, douloureux avec une chute importante ",
-                "     de l'acuité visuelle (l'œil perçoit à peine la lumière) ",
-                "Les douleurs     sont violentes, paroxystiques sur un fond douloureux permanent",
-                " Elles     siègent au dessus et autour de l'orbite et se propagent souvent à     distance vers l'arrière du crâne ",
-                " Larmoiement et crainte de la     lumière sont constants ",
-                " D'autres signes moins spécifiques comme     les nausées et vomissements sont fréquemment associés."
+                "de l'acuité visuelle (l'œil perçoit à peine la lumière) ",
+                "Les douleurs sont violentes, paroxystiques sur un fond douloureux permanent",
+                "Elles siègent au dessus et autour de l'orbite et se propagent souvent à distance vers l'arrière du crâne ",
+                "Larmoiement et crainte de la lumière sont constants ",
+                "D'autres signes moins spécifiques comme les nausées et vomissements sont fréquemment associés."
             ]
         },
         {
+            "id": 3,
             "nom": "keratocone",
             "description": "La cornée est le revêtement transparent de l’iris et de la pupille de l’œil. Normalement, elle a une forme arrondie régulière.Chez les personnes atteintes d’un kératocône (de 'kératos' pour cornée et conus' pour cône), la cornée se déforme et s’amincit progressivement, \\     perdant son allure sphérique pour prendre celle d’un cône irrégulier",
             "sympto": [
                 "Une sensibilité excessive à la lumière (photophobie) ",
-                "     Une irritation oculaire (yeux larmoyants)"
+                "Une irritation oculaire (yeux larmoyants)"
             ]
         },
         {
+            "id": 4,
             "nom": "Astigmatisme",
             "description": "Vous avez une boule rouge, douloureuse et gênante dans l’épaisseur de la paupière     ? C’est probablement un chalazion. Il ne faut pas confondre le chalazion avec l'orgelet : le chalazion     se trouve généralement dans l’épaisseur de la paupière, alors que l’orgelet se développe sur le bord     de la paupière, à la racine des cils",
             "sympto": [
                 "Présence d’une boule (kyste) sur la paupière ",
-                "     Paupière enflammée qui tombe sur l’œil ",
-                "     Infection légère de la conjonctive (fine membrane située à la surface du blanc de l’œil) ",
-                "     Douleur et sensation de grains de sable dans l’œil ",
-                "     Sensibilité accrue à la lumière ",
-                "     Larmoiement lorsque le chalazion est interne ",
-                "     Vue trouble lorsque le chalazion est important"
+                "Paupière enflammée qui tombe sur l’œil ",
+                "Infection légère de la conjonctive (fine membrane située à la surface du blanc de l’œil) ",
+                "Douleur et sensation de grains de sable dans l’œil ",
+                "Sensibilité accrue à la lumière ",
+                "Larmoiement lorsque le chalazion est interne ",
+                "Vue trouble lorsque le chalazion est important"
             ]
         },
         {
+            "id": 5,
             "nom": "Orgelet",
             "description": "L'orgelet est un furoncle (et donc une infection) d'un cil de la paupière.     Il est toujours localisé sur le bord et non dans la masse de la paupière comme un chalazion     (plus fréquent que l'orgelet)",
             "sympto": [
                 "Rougeur ",
-                " Douleur ",
+                "Douleur ",
                 "Chaleur ",
-                " Bouton purulent"
+                "Bouton purulent"
             ]
         }
     ]

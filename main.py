@@ -150,7 +150,7 @@ while tries_flag != "Close the program" :
                                 listesympto= symptome.split("/")
                                 maladie = Maladie(nom, description, listesympto)
                                 maladie.create()
-                                print("----------------------Maladie ajouter avec success----------------------")
+                                print("----------------------Maladie ajoutée avec success----------------------")
                             except :
                                 print("L'id du patien doit etre un entier ")	
                     elif Options == "2" :										
