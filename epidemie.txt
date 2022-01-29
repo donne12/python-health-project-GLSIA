@@ -1,0 +1,22 @@
+
+**** pour commencer creer le fichier json avec :
+
+    from epidemie import Epidemiologie
+
+    Epidemiologie.create_json_file()
+
+**** creer des objets avec :
+    Covid()
+    Ebola()
+    Sida()
+    Cholera()
+    Tuberculose()
+    FIEVRE JAUNE()
+    ROUGEOLE()
+
+**** les differentes fonctions 
+    <nom de la classe>.save(<nom de l'objet>) : pour enregistrer les informations de l'objet dans le fichier json
+    <nom de la classe>.all() : pour recuperer toutes les variant de la classe en question
+
+
+            
