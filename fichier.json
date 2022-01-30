@@ -108,7 +108,7 @@
         },
         {
             "id": 4,
-            "nom": "Astigmatisme",
+            "nom": "astigmatisme",
             "description": "Vous avez une boule rouge, douloureuse et gênante dans l’épaisseur de la paupière     ? C’est probablement un chalazion. Il ne faut pas confondre le chalazion avec l'orgelet : le chalazion     se trouve généralement dans l’épaisseur de la paupière, alors que l’orgelet se développe sur le bord     de la paupière, à la racine des cils",
             "sympto": [
                 "Présence d’une boule (kyste) sur la paupière ",
@@ -122,13 +122,22 @@
         },
         {
             "id": 5,
-            "nom": "Orgelet",
+            "nom": "orgelet",
             "description": "L'orgelet est un furoncle (et donc une infection) d'un cil de la paupière.     Il est toujours localisé sur le bord et non dans la masse de la paupière comme un chalazion     (plus fréquent que l'orgelet)",
             "sympto": [
                 "Rougeur ",
                 "Douleur ",
                 "Chaleur ",
                 "Bouton purulent"
+            ]
+        },
+        {
+            "id": 6,
+            "nom": "sida",
+            "description": "Maladie infectieuse",
+            "sympto": [
+                "Faiblesse",
+                "Vulnérabilité"
             ]
         }
     ]

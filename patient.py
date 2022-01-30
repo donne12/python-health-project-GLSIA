@@ -32,13 +32,13 @@ class patient:
         if( nom  !=" " and prenom != " " ):
             b= data["Patient"]
             for patient in  b:
-                    if((patient["nom"]==nom.lower()) and(patient["prenom"]==prenom.lower())):
-                        self.numero = patient["numero"]
-                        self.nom = patient["nom"]
-                        self.prenom = patient["prenom"]
-                        self.adresse = patient["adresse"]
-                        self.age = patient["age"]
-                        self.consultations = patient["consultations"]
+                if((patient["nom"]==nom.lower()) and(patient["prenom"]==prenom.lower())):
+                    self.numero = patient["numero"]
+                    self.nom = patient["nom"]
+                    self.prenom = patient["prenom"]
+                    self.adresse = patient["adresse"]
+                    self.age = patient["age"]
+                    self.consultations = patient["consultations"]
         print("liste des consultation de {} {}...".format(self.nom, self.prenom))
         print("\n")
         data = lire("fichier.json")
