@@ -1,0 +1,39 @@
+{
+    "Patients": [
+        {
+            "numero": "RVVXI4ZQ95",
+            "nom": "LAWSON-HETCHELY",
+            "prenom": "Lat\u00e9 Seth",
+            "age": 18,
+            "sexe": "M"
+        },
+        {
+            "numero": "LUO3IH3UXA",
+            "nom": "KUMAVI",
+            "prenom": "Moise",
+            "age": "20",
+            "sexe": "M"
+        },
+        {
+            "numero": "82EW33MPEB",
+            "nom": "KUMAVI",
+            "prenom": "Moise",
+            "age": "20",
+            "sexe": "M"
+        },
+        {
+            "numero": "KU41XS788Y",
+            "nom": "AKOTI",
+            "prenom": "Steven",
+            "age": "20",
+            "sexe": "M"
+        },
+        {
+            "numero": "FVES299SG2",
+            "nom": "AKOTI",
+            "prenom": "Steven",
+            "age": "20",
+            "sexe": "M"
+        }
+    ]
+}

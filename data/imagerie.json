@@ -1,0 +1,72 @@
+{
+    "Imageries": [
+        {
+            "numero": "NU1NFXEG9K",
+            "typeImagerie": "scanner",
+            "description": "nothing",
+            "partieDuCorps": "seins",
+            "etatUrgence": 0,
+            "image": {
+                "numero": "N2CAAR5DCW",
+                "format": "png",
+                "contraste": 80,
+                "luminiosite": 50,
+                "image": "source",
+                "date": "30/01/2022"
+            },
+            "patient": {
+                "numero": "RVVXI4ZQ95",
+                "nom": "LAWSON-HETCHELY",
+                "prenom": "Lat\u00e9 Seth",
+                "age": 18,
+                "sexe": "M"
+            }
+        },
+        {
+            "numero": "1NFM2IANKA",
+            "date": "31/01/2022",
+            "typeImagerie": "radiographie",
+            "description": "radio",
+            "partieDuCorps": "ventre",
+            "etatUrgence": "0.2",
+            "image": {
+                "numero": "G1L0H1GUDY",
+                "format": "jpg",
+                "contraste": "50",
+                "luminiosite": "40",
+                "image": "source",
+                "date": "31/01/2022"
+            },
+            "patient": {
+                "numero": "82EW33MPEB",
+                "nom": "KUMAVI",
+                "prenom": "Moise",
+                "age": "20",
+                "sexe": "M"
+            }
+        },
+        {
+            "numero": "W5GT86HUF1",
+            "date": "31/01/2022",
+            "typeImagerie": "IRM",
+            "description": "scanne radio",
+            "partieDuCorps": "crane",
+            "etatUrgence": "2.0",
+            "image": {
+                "numero": "X4IN10FUYO",
+                "format": "PNG",
+                "contraste": "88",
+                "luminiosite": "98",
+                "image": "source",
+                "date": "31/01/2022"
+            },
+            "patient": {
+                "numero": "FVES299SG2",
+                "nom": "AKOTI",
+                "prenom": "Steven",
+                "age": "20",
+                "sexe": "M"
+            }
+        }
+    ]
+}

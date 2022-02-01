@@ -1,0 +1,44 @@
+{
+    "Images": [
+        {
+            "numero": "N2CAAR5DCW",
+            "format": "png",
+            "contraste": 80,
+            "luminiosite": 50,
+            "image": "source",
+            "date": "30/01/2022"
+        },
+        {
+            "numero": "BTP1FR7VE3",
+            "format": "jpg",
+            "contraste": "50",
+            "luminiosite": "40",
+            "image": "source",
+            "date": "31/01/2022"
+        },
+        {
+            "numero": "G1L0H1GUDY",
+            "format": "jpg",
+            "contraste": "50",
+            "luminiosite": "40",
+            "image": "source",
+            "date": "31/01/2022"
+        },
+        {
+            "numero": "XN2SIF43XL",
+            "format": "PNG",
+            "contraste": "88",
+            "luminiosite": "98",
+            "image": "source",
+            "date": "31/01/2022"
+        },
+        {
+            "numero": "X4IN10FUYO",
+            "format": "PNG",
+            "contraste": "88",
+            "luminiosite": "98",
+            "image": "source",
+            "date": "31/01/2022"
+        }
+    ]
+}
