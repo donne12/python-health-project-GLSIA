@@ -1,0 +1,311 @@
+{
+    "Patient": [
+        {
+            "numero": 1,
+            "nom": "BOUNDJA",
+            "prenom": "Claudia",
+            "adresse": "53 Rue Limo",
+            "zone": "Limozine",
+            "age": 19,
+            "consultations": [
+                {
+                    "douleur": true,
+                    "polype": false,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-01 22:15:38.837450"
+                },
+                {
+                    "douleur": true,
+                    "polype": false,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-02 22:15:38.837450"
+                }
+            ],
+            "pathologies": [
+                "polymenorrhe",
+                "polymenorrhe"
+            ]
+        },
+        {
+            "numero": 2,
+            "nom": "APAFLO",
+            "prenom": "Nicole",
+            "adresse": "53 Rue paris",
+            "zone": "Totsi",
+            "age": 20,
+            "consultations": [
+                {
+                    "douleur": false,
+                    "polype": false,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-22 22:15:38.837450"
+                }
+            ],
+            "pathologies": [
+                "polymenorrhe"
+            ]
+        },
+        {
+            "numero": 3,
+            "nom": "De La Croix",
+            "prenom": "Francois",
+            "adresse": "Lyon",
+            "zone": "blabla",
+            "age": 37,
+            "consultations": [
+                {
+                    "douleur": false,
+                    "polype": false,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-22 22:15:38.837450"
+                }
+            ],
+            "pathologies": []
+        },
+        {
+            "numero": 4,
+            "nom": "ADRAKE",
+            "prenom": "Dorcas",
+            "adresse": "144 Rue Nyekonakpoe",
+            "zone": "Nyekonakpoe",
+            "age": 20,
+            "consultations": [
+                {
+                    "douleur": true,
+                    "polype": true,
+                    "lesion_cervicale": true,
+                    "leucorrhe": false,
+                    "date": "2022-01-23 15:49:42.852150"
+                }
+            ],
+            "pathologies": [
+                "Narkaze"
+            ]
+        },
+        {
+            "numero": 5,
+            "nom": "AZIAMADJI",
+            "prenom": "Kokou Heining",
+            "adresse": "53 Rue Weme 5",
+            "zone": "Weme",
+            "age": 19,
+            "consultations": [
+                {
+                    "douleur": false,
+                    "polype": false,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-23 16:04:48.066044"
+                },
+                {
+                    "douleur": true,
+                    "polype": false,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-24 11:52:53.028988"
+                }
+            ],
+            "pathologies": [
+                "Narkaze"
+            ]
+        },
+        {
+            "numero": 6,
+            "nom": "ADJANKE",
+            "prenom": "Jean",
+            "adresse": "Tokoin",
+            "zone": "Ramco",
+            "age": 20,
+            "consultations": [
+                {
+                    "douleur": false,
+                    "polype": false,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-30 20:43:37.080449",
+                    "temperature": "elevé"
+                }
+            ],
+            "pathologies": []
+        },
+        {
+            "numero": 7,
+            "nom": "De Souza",
+            "prenom": "Cynel",
+            "adresse": "Agbalepedo",
+            "zone": "HAAC",
+            "age": 20,
+            "consultations": [
+                {
+                    "douleur": false,
+                    "polype": false,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-30 20:48:13.034055",
+                    "forme": "maigre"
+                },
+                {
+                    "douleur": true,
+                    "polype": true,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-12 00:00:00"
+                }
+            ],
+            "pathologies": []
+        },
+        {
+            "numero": 8,
+            "nom": "TEWUIA",
+            "prenom": "Blaise",
+            "adresse": "33 Rue Cacaveli",
+            "zone": "Marche Cacaveli",
+            "age": 22,
+            "consultations": [
+                {
+                    "douleur": true,
+                    "polype": true,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-12 00:00:00"
+                }
+            ],
+            "pathologies": []
+        },
+        {
+            "numero": 9,
+            "nom": "SOHENOU",
+            "prenom": "Ingrid",
+            "adresse": "45 Rue N'tifafa Ville2",
+            "zone": "Tsévié",
+            "age": 16,
+            "consultations": [
+                {
+                    "douleur": false,
+                    "polype": false,
+                    "lesion_cervicale": false,
+                    "leucorrhe": false,
+                    "date": "2022-01-30 12:57:04.461593"
+                }
+            ],
+            "pathologies": []
+        },
+        {
+            "numero": 10,
+            "nom": "BABALOLA",
+            "prenom": "Koffi",
+            "adresse": "33 Rue de la chance",
+            "zone": "Cototnou",
+            "age": 15,
+            "consultations": [],
+            "pathologies": []
+        },
+        {
+            "numero": 11,
+            "nom": "MAMALOU",
+            "prenom": "Jean",
+            "adresse": "N'importe quoi",
+            "zone": "naze",
+            "age": 25,
+            "consultations": [],
+            "pathologies": []
+        }
+    ],
+    "Maladie": [
+        {
+            "nom": "polymenorrhe",
+            "description": "Troubles de la quantité",
+            "traitement": "Produit,Hydratation avec l'eau",
+            "sympto": [
+                "douleur",
+                "deshydratation"
+            ]
+        },
+        {
+            "nom": "Narkaze",
+            "description": "Une maladie de test",
+            "traitement": "Prise de produit regulier",
+            "sympto": [
+                "douleur",
+                " polype",
+                " Lesion_cevicale"
+            ]
+        },
+        {
+            "nom": "Métrorragie",
+            "description": "Hémorragie en dehors des règles",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Métroménorragie",
+            "description": "Saignement perpétuel",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Aménorrhé",
+            "description": "Absence de règles pendant au moins 3 mois en dehors de la grossesse",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Menopause",
+            "description": "",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Fibrome",
+            "description": "Tumeur bénigne du muscle utérin",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Polype",
+            "description": "Excroissance, formation bénigne associée à un risque d'apparition de cancer",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Aplasie",
+            "description": "Absence d'utérus",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Cervicite",
+            "description": "Inflammation et infection parasitaire, microbienne ou virale se declarant par les leucorrhées",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Cancer de l'ovaire",
+            "description": "",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Cancer du col",
+            "description": "",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Cancer de l'endomètre",
+            "description": "",
+            "traitement": "",
+            "sympto": []
+        },
+        {
+            "nom": "Cancer du sein",
+            "description": "",
+            "traitement": "",
+            "sympto": []
+        }
+    ]
+}
