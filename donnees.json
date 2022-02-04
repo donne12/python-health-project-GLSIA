@@ -1,6 +1,7 @@
 {
     "Patient": [
         {
+<<<<<<< Updated upstream
             "nom": "a",
             "prenom": "a",
             "age": 2,
@@ -15,6 +16,172 @@
                 "a"
             ],
             "date": "2022-01-27 11:57:17.965040"
+=======
+            "nom": "BADAYODI",
+            "prenom": "Samson",
+            "age": 21,
+            "adresse": "Lome",
+            "type_cas": "Cas contact",
+            "sympthome": [
+                "toux",
+                "fievre"
+            ],
+            "diagnostic": [
+                "Corona"
+            ],
+            "traitement": [
+                "anticorona"
+            ],
+            "date": "2022-02-04 10:10:18.646407",
+            "id": 1
+        },
+        {
+            "nom": "SOHENOU",
+            "prenom": "Kevin",
+            "age": 20,
+            "adresse": "Tsévié",
+            "type_cas": "Cas confirmé",
+            "sympthome": [
+                "diarhée",
+                "vomissements"
+            ],
+            "diagnostic": [
+                "Cholera"
+            ],
+            "traitement": [
+                "anticholera"
+            ],
+            "date": "2022-02-04 10:10:18.661228",
+            "id": 2
+        },
+        {
+            "nom": "ESIAKU",
+            "prenom": "Donnée",
+            "age": 20,
+            "adresse": "Tsevié",
+            "type_cas": "Cas contact",
+            "sympthome": [
+                "douleur",
+                "perte"
+            ],
+            "diagnostic": [
+                "SIDA"
+            ],
+            "traitement": [
+                "anti retro viro"
+            ],
+            "date": "2022-02-04 10:10:18.680150",
+            "id": 3
+        },
+        {
+            "nom": "LABAH",
+            "prenom": "Esaie",
+            "age": 19,
+            "adresse": "Lome",
+            "type_cas": "Cas contact",
+            "sympthome": [
+                "maux de ventre"
+            ],
+            "diagnostic": [
+                "Cholera"
+            ],
+            "traitement": [
+                "anticholera"
+            ],
+            "date": "2022-02-04 10:10:18.687044",
+            "id": 4
+        },
+        {
+            "nom": "LARE",
+            "prenom": "Bilal",
+            "age": 21,
+            "adresse": "Lome",
+            "type_cas": "Cas contact",
+            "sympthome": [
+                "iritation"
+            ],
+            "diagnostic": [
+                "rougeole"
+            ],
+            "traitement": [
+                "selaver"
+            ],
+            "date": "2022-02-04 10:10:18.703778",
+            "id": 5
+        },
+        {
+            "nom": "AGOUDA",
+            "prenom": "Kurtys",
+            "age": 22,
+            "adresse": "Lome",
+            "type_cas": "Cas confirme",
+            "sympthome": [
+                "toux aigu"
+            ],
+            "diagnostic": [
+                "Corona"
+            ],
+            "traitement": [
+                "anticorona"
+            ],
+            "date": "2022-02-04 10:10:18.716131",
+            "id": 6
+        },
+        {
+            "nom": "AKAKPO",
+            "prenom": "Amandine",
+            "age": 21,
+            "adresse": "Lome",
+            "type_cas": "Cas contact",
+            "sympthome": [
+                "toux seche"
+            ],
+            "diagnostic": [
+                "paludisme"
+            ],
+            "traitement": [
+                "antibiotique"
+            ],
+            "date": "2022-02-04 10:10:18.730308",
+            "id": 7
+        },
+        {
+            "nom": "BOUNDJA",
+            "prenom": "Claudia",
+            "age": 20,
+            "adresse": "Lome",
+            "type_cas": "Cas confirme",
+            "sympthome": [
+                "vomissemetns"
+            ],
+            "diagnostic": [
+                "SIDA"
+            ],
+            "traitement": [
+                "antiretroviro"
+            ],
+            "date": "2022-02-04 10:10:18.741656",
+            "id": 8
+        },
+        {
+            "nom": "MOTI",
+            "prenom": "Sephora",
+            "age": 20,
+            "adresse": "Lome",
+            "type_cas": "Cas contact",
+            "sympthome": [
+                "fievre",
+                "douleur"
+            ],
+            "diagnostic": [
+                "paludisme"
+            ],
+            "traitement": [
+                "antibiotique"
+            ],
+            "date": "2022-02-04 10:10:18.750371",
+            "id": 9
+>>>>>>> Stashed changes
         }
     ],
     "Covid": [
@@ -56,7 +223,34 @@
             },
             "moyen_de_propagation": [
                 "aï¿½rien"
+<<<<<<< Updated upstream
             ]
+=======
+            ],
+            "date": "2020-01-09"
+        },
+        {
+            "nom": "OMICRON",
+            "ro": 0.1,
+            "taux_de_letalite": 0.5,
+            "agent_pathogenes": "covid 19",
+            "mesures_de_lutte": [
+                "laver les mains",
+                "pxzcipr",
+                "aecezrvr"
+            ],
+            "sympthome": [
+                "dpfpj",
+                "aifjre",
+                "uxieeni",
+                "dty"
+            ],
+            "moyen_de_propagation": [
+                "aerien",
+                "oieoei"
+            ],
+            "date": "2022-01-31"
+>>>>>>> Stashed changes
         }
     ],
     "Ebola": [
@@ -102,7 +296,12 @@
             },
             "moyen_de_propagation": [
                 "contact de fluide corporel"
+<<<<<<< Updated upstream
             ]
+=======
+            ],
+            "date": "1976-09-01"
+>>>>>>> Stashed changes
         }
     ],
     "SIDA": [
@@ -139,7 +338,12 @@
                 "transfusion sanguine",
                 "partage dï¿½aiguilles contaminï¿½es",
                 "de la mï¿½re ï¿½ lï¿½enfant au cours de la grossesse, de lï¿½accouchement et de lï¿½allaitement"
+<<<<<<< Updated upstream
             ]
+=======
+            ],
+            "date": "1983-01-01"
+>>>>>>> Stashed changes
         }
     ],
     "CHOLERA": [
@@ -166,7 +370,12 @@
                 "en ingï¿½rant de l'eau contaminï¿½e",
                 "en ingï¿½rant des aliments contaminï¿½s",
                 "en ingï¿½rant de maniï¿½re non intentionnelle les selles d'une personne infectï¿½e."
+<<<<<<< Updated upstream
             ]
+=======
+            ],
+            "date": "1883-12-31"
+>>>>>>> Stashed changes
         }
     ],
     "Tuberculose": [
@@ -194,7 +403,12 @@
             },
             "moyen_de_propagation": [
                 "aï¿½rien"
+<<<<<<< Updated upstream
             ]
+=======
+            ],
+            "date": "1679-12-31"
+>>>>>>> Stashed changes
         }
     ],
     "FIEVRE JAUNE": [
@@ -220,7 +434,12 @@
             },
             "moyen_de_propagation": [
                 "piqï¿½re de moustiques appartenant aux genres Aedes et Haemagogus"
+<<<<<<< Updated upstream
             ]
+=======
+            ],
+            "date": "1927-12-31"
+>>>>>>> Stashed changes
         }
     ],
     "ROUGEOLE": [
@@ -245,7 +464,31 @@
             "moyen_de_propagation": [
                 "se transmet trï¿½s facilement par la toux",
                 "se transmet par les ï¿½ternuements et les sï¿½crï¿½tions nasales"
+<<<<<<< Updated upstream
             ]
+=======
+            ],
+            "date": "1912-12-31"
+        }
+    ],
+    "rougeole": [
+        {
+            "nom": "rougeole",
+            "ro": 0.123,
+            "taux_de_letalite": 125.0,
+            "agent_pathogenes": "adefr",
+            "moyen de prevention": [
+                "qs",
+                "sdf",
+                "azer"
+            ],
+            "sympthï¿½mes": [
+                "ok",
+                "nbhg",
+                "pmlo"
+            ],
+            "date": "2022-01-31 09:25:55.899234"
+>>>>>>> Stashed changes
         }
     ]
 }

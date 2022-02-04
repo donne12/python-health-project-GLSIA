@@ -3,8 +3,11 @@ from os import system
 
 #Epidemiologie.create_json_file()
 
+<<<<<<< Updated upstream
 print(Epidemiologie.data.keys())
 '''
+=======
+>>>>>>> Stashed changes
 system("cls")
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
 print("::::::::::::::::::::::::>>>> EPIDEMIOLOGIE <<<:::::::::::::::::::::::::")
@@ -221,6 +224,7 @@ while True:
                 choix22 = input("Faites votre choix: ")
             if choix22 == "1":
                 system("cls")
+<<<<<<< Updated upstream
                 print("\t +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
                 cov = Covid.all()
                 print(cov)
@@ -267,14 +271,85 @@ while True:
                 roug = ROUGEOLE.all()
                 print(roug)
                 print("\t +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+=======
+                print("\t ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ COVID ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                covs = Covid.all()
+                for cov in covs :
+                    print("\t ---------------------------------------------------------------------------------------------------------------------------------------------")
+                    print("\t Date : ",cov.get("date")," Nom : ",cov.get("nom")," agent_pathogenes : ",cov.get("agent_pathogenes")," moyen_de_propagation : ",cov.get("moyen_de_propagation"))
+                print("\t ")
+                system("pause")                
+            elif choix22 == "2":
+                system("cls")
+                print("\t ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ EBOLA ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                ebos = Ebola.all()
+                for ebo in ebos :
+                    print("\t ---------------------------------------------------------------------------------------------------------------------------------------------")
+                    print("\t Date : ",ebo.get("date")," Nom : ",ebo.get("nom")," agent_pathogenes : ",ebo.get("agent_pathogenes")," moyen_de_propagation : ",ebo.get("moyen_de_propagation"))
+                print("\t")
+                system("pause")
+            elif choix22 == "3":
+                system("cls")
+                print("\t ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ TUBERCULOSE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                tubs = Tuberculose.all()
+                for tub in tubs :
+                    print("\t ---------------------------------------------------------------------------------------------------------------------------------------------")
+                    print("\t Date : ",tub.get("date")," Nom : ",tub.get("nom")," agent_pathogenes : ",tub.get("agent_pathogenes")," moyen_de_propagation : ",tub.get("moyen_de_propagation"))
+                print("\t")
+                system("pause")
+            elif choix22 == "4":
+                system("cls")
+                print("\t ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SIDA ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                sids = SIDA.all()
+                for sid in sids :
+                    print("\t ---------------------------------------------------------------------------------------------------------------------------------------------")
+                    print("\t Date : ",sid.get("date")," Nom : ",sid.get("nom")," agent_pathogenes : ",sid.get("agent_pathogenes")," moyen_de_propagation : ",sid.get("moyen_de_propagation"))
+                print("\t ")
+                system("pause")
+            elif choix22 == "5":
+                system("cls")
+                print("\t ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CHOLERA ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                chols = CHOLERA.all()
+                for chol in chols :
+                    print("\t ---------------------------------------------------------------------------------------------------------------------------------------------")
+                    print("\t Date : ",chol.get("date")," Nom : ",chol.get("nom")," agent_pathogenes : ",chol.get("agent_pathogenes")," moyen_de_propagation : ",chol.get("moyen_de_propagation"))
+                print("\t ")
+                system("pause")
+            elif choix22 == "6":
+                system("cls")
+                print("\t ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FIEVRE JAUNE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                fvs = FIEVRE_JAUNE.all()
+                for fv in fvs :
+                    print("\t ---------------------------------------------------------------------------------------------------------------------------------------------")
+                    print("\t Date : ",fv.get("date")," Nom : ",fv.get("nom")," agent_pathogenes : ",fv.get("agent_pathogenes")," moyen_de_propagation : ",fv.get("moyen_de_propagation"))
+                print("\t")
+                system("pause")
+            elif choix22 == "7":
+                system("cls")
+                print("\t ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ROUGEOLE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                rougs = ROUGEOLE.all()
+                for roug in rougs :
+                    print("\t ---------------------------------------------------------------------------------------------------------------------------------------------")
+                    print("\t Date : ",roug.get("date")," Nom : ",roug.get("nom")," agent_pathogenes : ",roug.get("agent_pathogenes")," moyen_de_propagation : ",roug.get("moyen_de_propagation"))
+                print("\t")
+>>>>>>> Stashed changes
                 system("pause")
             elif choix22 == "8":
                 type = input("Entrer le nom de l'Epidemie : ")
                 system("cls")
+<<<<<<< Updated upstream
                 print("\t +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
                 eps = Epidemiologie.all(type)
                 print(eps)
                 print("\t +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+=======
+                print("\t ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ",type," ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                eps = Epidemiologie.all(type)
+                for ep in eps :
+                    print("\t ---------------------------------------------------------------------------------------------------------------------------------------------")
+                    print("\t Date : ",ep.get("date")," Nom : ",ep.get("nom")," agent_pathogenes : ",ep.get("agent_pathogenes")," moyen_de_propagation : ",ep.get("moyen_de_propagation"))
+                print("\t ")
+>>>>>>> Stashed changes
                 system("pause")
             elif choix22 == "0":
                 break
@@ -299,21 +374,43 @@ while True:
         print("++++++++++++++++++++++++++ PATIENT ++++++++++++++++++++++++")
         print("\t1- Liste des Patient")
         print("\t2- Ajouter un Patient")
+<<<<<<< Updated upstream
         print("\t0- quitter")
         print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
         choix3 = input("Faites votre choix: ")
         while choix3 not in ("0","1","2"):
+=======
+        print("\t3- Ajouter plusieurs Patient grace a un fichier exel")
+        print("\t0- quitter")
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+        choix3 = input("Faites votre choix: ")
+        while choix3 not in ("0","1","2","3"):
+>>>>>>> Stashed changes
             system("cls")
             print("++++++++++++++++++++++++++ PATIENT ++++++++++++++++++++++++")
             print("\t1- Liste des Patient")
             print("\t2- Ajouter un Patient")
+<<<<<<< Updated upstream
+=======
+            print("\t3- Ajouter plusieurs Patient grace a un fichier exel")
+>>>>>>> Stashed changes
             print("\t0- quitter")
             print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
             choix3 = input("Faites votre choix: ")
             system("cls")
         if choix3 == "1":
+<<<<<<< Updated upstream
             pat = Patient.all()
             print(pat)
+=======
+            system("cls")
+            pats = Patient.all()
+            print("\t ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Liste(PATIENTS) ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+            for pat in pats :
+                print("\t ---------------------------------------------------------------------------------------------------------------------------------------------")
+                print("\t Matricule : ",pat.get("id")," Nom : ",pat.get("nom")," Prenom : ",pat.get("prenom")," Age : ",pat.get("age")," Adresse : ",pat.get("adresse")," Date : ",pat.get("date"))
+            print("\t")
+>>>>>>> Stashed changes
             system("pause")
         elif choix3 == "2":    
             personne = {}
@@ -322,10 +419,18 @@ while True:
                 personne["prenom"] = input("Entrer le prenom: ")
                 personne["age"] = int(input("Entrer son age: "))
                 personne["adresse"] = input("Entrer son adresse: ")
+<<<<<<< Updated upstream
             except:
                 print("Entrer incorrect !!!")
                 continue
             P = Patient(personne["nom"],personne["prenom"],personne["age"],personne["adresse"])
+=======
+                personne["type_cas"] = input("Entrez le cas: ")
+            except:
+                print("Entrer incorrect !!!")
+                continue
+            P = Patient(personne["nom"],personne["prenom"],personne["age"],personne["adresse"],personne["type_cas"])
+>>>>>>> Stashed changes
             try:
                 P.sympthome = input(" saisisez les sympthomes séparé de ',' : ").split(",")
                 P.diagnostic = input(" saisisez les diagnostic séparé de ',' : ").split(",")
@@ -337,10 +442,22 @@ while True:
             except:
                 print("error !!!")
                 continue
+<<<<<<< Updated upstream
+=======
+        elif choix3 == "3":
+            system("cls")
+            rep = input("Entrez le chemin vers le fichier exel : ")
+            Epidemiologie.charger(rep)
+            print("Les Patients on été enregistré avec success !!!")
+            system("pause")
+>>>>>>> Stashed changes
         elif choix3 == "0":
             break
     elif choix == "0":
         break
 system("cls")
 print("Bye ...")
+<<<<<<< Updated upstream
 '''
+=======
+>>>>>>> Stashed changes
