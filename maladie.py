@@ -7,14 +7,13 @@ import json
 
 
 class Maladie:
-    id: str
+    id: int
     nom: str
     symptomes: []
     categorie: str
 
     def __init__(self):
-        g = Generator()
-        self.id = g.generate_id_formated()
+        self.id = 0
         self.nom = ''
         self.symptomes = []
         self.categorie = ''
@@ -33,6 +32,13 @@ class Maladie:
             "categorie": str(input("Catégorie: "))
         }
 
+        m = get("maladies")
+
+        # si la liste de maladies n'est pas vide,
+        # L'id du nouveau élément est celui du dernier de la liste + 1
+        if len(m) != 0:
+            data["id"] = m[-1]["id"] + 1
+
         if data['categorie'] not in ['lesion', 'pathologie']:
             data['categorie'] = str(input("Catégorie (pathologie/lesion):"))
 
@@ -42,7 +48,7 @@ class Maladie:
     # Fonction de modification: Elle récupère l'objet à modifier par son id et demande les données à modifier
     def update(self):
         title("Modifier une maladie")
-        id = str(input('\n>>> Entrez l\'identifiant: '))
+        id = int(input('\n>>> Entrez l\'identifiant: '))
 
         # Si l'objet a été retrouvé
         if get_element(get("maladies"), id) is not None:
@@ -77,7 +83,7 @@ class Maladie:
             rewrite("maladies", data)
 
     # Redefinir les valeurs de l'objet classe à partir de data
-    def to_class_data(self, data):
+    def to_class_data(self, data: {}):
         self.id = data["id"]
         self.nom = data["nom"]
         self.symptomes = data["symptomes"]
@@ -85,13 +91,13 @@ class Maladie:
 
     # Afficher un objet sélectionné dans un tableau
     def afficher(self):
-        id = str(input('\n>>> Entrez l\'identifiant: '))
+        id = int(input('\n>>> Entrez l\'identifiant: '))
         self.to_class_data(get_element(get("maladies"), id))
 
         title("Une Maladie")
         bar = '+' + '-'*27 + '+' + '-'*49 + '+'
         print(bar)
-        print('|', 'ID'.center(25), '|', self.id.center(47), '|')
+        print('|', 'ID'.center(25), '|', str(self.id).center(47), '|')
         print(bar)
         print('|', 'Nom'.center(25), '|', self.nom.center(47), '|')
         print(bar)
@@ -109,4 +115,9 @@ class Maladie:
 
 
 
-#{"maladies": [{"id": "D9AFd-5ve6v-zpAtk-LdsDu", "nom": "Poux", "symptomes": ["plaies", "rougeurs"], "categorie": "lesion"}, {"id": "E9iPC-eCeSF-rgqyt-hTdEt", "nom": "Acn\u00e9", "symptomes": ["bouttons", "visage huileux"], "categorie": "lesion"}], "medecins": [{"id": "xBib1-xM663-eGCPs-chbuj", "nom": "HIHEA", "prenom": "Ghust", "tel": "91489000", "adr": "K\u00e9gu\u00e9"}, {"id": "PnH9p-AZqz8-vrThg-ttQeD", "nom": "ANALLA", "prenom": "Ace", "tel": "98756233", "adr": "Ago\u00e8"}], "patients": [{"id": "P0l6Z-mPHxZ-K1JTs-JcoW4", "nom": "Tokio", "prenom": "sem", "tel": "79645440", "adr": "Adidogom\u00e9", "consultations": []}]}
+# {"maladies": [{"id": "D9AFd-5ve6v-zpAtk-LdsDu", "nom": "Poux", "symptomes": ["plaies", "rougeurs"], "categorie":
+# "lesion"}, {"id": "E9iPC-eCeSF-rgqyt-hTdEt", "nom": "Acn\u00e9", "symptomes": ["bouttons", "visage huileux"],
+# "categorie": "lesion"}], "medecins": [{"id": "xBib1-xM663-eGCPs-chbuj", "nom": "HIHEA", "prenom": "Ghust",
+# "tel": "91489000", "adr": "K\u00e9gu\u00e9"}, {"id": "PnH9p-AZqz8-vrThg-ttQeD", "nom": "ANALLA", "prenom": "Ace",
+# "tel": "98756233", "adr": "Ago\u00e8"}], "patients": [{"id": "P0l6Z-mPHxZ-K1JTs-JcoW4", "nom": "Tokio",
+# "prenom": "sem", "tel": "79645440", "adr": "Adidogom\u00e9", "consultations": []}]}

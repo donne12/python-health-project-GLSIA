@@ -5,9 +5,10 @@ import json
 
 
 def title(message):
-    print('\n****** ****** ***** ***** *****')
+    print('\n****** ****** ***** ***** ***** *****')
     print('\t', message)
     print('****** ****** ***** ***** *****\n')
+
 
 # Connexion à l'application
 def login(username: str, password: str):
@@ -21,10 +22,12 @@ def login(username: str, password: str):
             return True
     return False
 
+
 # Ajouter un utilisateur à l'application
 def add_user(data: {}):
     data["password"] = crypt.crypt(data["password"], crypt.METHOD_MD5)
     write("users", data)
+
 
 # Modifier l'utilisateur connecté
 def update_user(username: str, password: str):
@@ -38,9 +41,10 @@ def update_user(username: str, password: str):
         cpt += 1
 
     with open('json/data.json', 'w', encoding='utf-8') as myFile:
-        json.dump(file_data, myFile)
+        json.dump(file_data, myFile, indent=4)
     myFile.close()
-    print('\nMot de passe modifié!!!')
+    print('Mot de passe modifié!!!')
+
 
 # Fonction pour enregistrer un élement (data) d'une classe dans le fichier json
 def write(classe: str, data: {}):
@@ -51,9 +55,10 @@ def write(classe: str, data: {}):
     file_data[classe].append(data)
 
     with open('json/data.json', 'w', encoding='utf-8') as myFile:
-        json.dump(file_data, myFile)
+        json.dump(file_data, myFile, indent=4)
     myFile.close()
     print('Enregistrement réussi!!!')
+
 
 # Fonction pour modifier un élement (data) d'une classe dans le fichier json
 def rewrite(classe: str, data: {}):
@@ -68,9 +73,10 @@ def rewrite(classe: str, data: {}):
         cpt += 1
 
     with open('json/data.json', 'w', encoding='utf-8') as myFile:
-        json.dump(file_data, myFile)
+        json.dump(file_data, myFile, indent=4)
     myFile.close()
     print('\nModification réussi!!!')
+
 
 # Fonction pour afficher la liste des élements d'une classe et de retourner les données
 def read(classe: str):
@@ -79,10 +85,11 @@ def read(classe: str):
     if len(file_data) == 0:
         print("Il n'existe pas d\'enregistrement.")
     else:
-        title('Liste des '+ classe)
+        title('Liste des ' + classe)
         for elt in file_data[classe]:
-            print(elt)
+            print(json.dumps(elt, indent=4))
     return file_data[classe]
+
 
 # Fonction pour retourner les données d'une classe
 def get(classe: str):
@@ -90,8 +97,9 @@ def get(classe: str):
         file_data = json.load(myFile)
     return file_data[classe]
 
+
 # Fonction pour récupérer un élément d'une liste grace à son identifiant
-def get_element(data, id: str):
+def get_element(data, id: int):
     for elt in data:
         if elt['id'] == id:
             return elt

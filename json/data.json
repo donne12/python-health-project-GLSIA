@@ -1,1 +1,187 @@
-{"users": [{"username": "medi01", "password": "$1$OLss0p.J$wN/.c7ri7YO7Z0FhdPxTp1"}, {"username": "ola", "password": "$1$on8yxXQc$fykWqQvBeZlR454Ko3S5v1"}], "maladies": [{"id": "D9AFd-5ve6v-zpAtk-LdsDu", "nom": "Poux", "symptomes": ["plaies", "rougeurs"], "categorie": "lesion"}, {"id": "E9iPC-eCeSF-rgqyt-hTdEt", "nom": "Acn\u00e9", "symptomes": ["bouttons", "visage huileux"], "categorie": "lesion"}], "medecins": [{"id": "xBib1-xM663-eGCPs-chbuj", "nom": "HIHEA", "prenom": "Ghust", "tel": "91489000", "adr": "K\u00e9gu\u00e9"}, {"id": "PnH9p-AZqz8-vrThg-ttQeD", "nom": "ANALLA", "prenom": "Ace", "tel": "98756233", "adr": "Ago\u00e8"}], "patients": [{"id": "P0l6Z-mPHxZ-K1JTs-JcoW4", "nom": "OLAITAN", "prenom": "sem", "tel": "79645440", "adr": "Adidogom\u00e9", "consultations": [{"id": "qW4mi-Ltw33-DXoph-eHajj", "medecin": "HIHEA Ghust", "maladie": "Poux", "date consultation": "2022-01-18", "prescriptions": ["yhu", "uhhh", "hu"], "observations": ["gh", "ioitre", "df"], "rdv": "220022"}, {"id": "5a0fQ-BvnpO-taIf1-6aLOZ", "medecin": "ANALLA Ace", "maladie": "Acn\u00e9", "date consultation": "2022-01-18", "prescriptions": ["hj"], "observations": ["fgjh", " hujn"], "rdv": "20202325"}]}, {"id": "GkSOs-HDcB3-91P15-zU5HR", "nom": "MELESSUSU", "prenom": "Aristide", "tel": "97564112", "adr": "Adidogom\u00e9", "consultations": []}]}
+{
+    "users": [
+        {
+            "username": "medi01",
+            "password": "$1$gGSZbK.0$8kcSodU8jqRLfXAl3Tm6Q."
+        },
+        {
+            "username": "ola",
+            "password": "$1$on8yxXQc$fykWqQvBeZlR454Ko3S5v1"
+        }
+    ],
+    "maladies": [
+        {
+            "id": 0,
+            "nom": "Poux",
+            "symptomes": [
+                "plaies",
+                "rougeurs"
+            ],
+            "categorie": "lesion"
+        },
+        {
+            "id": 1,
+            "nom": "Acn\u00e9",
+            "symptomes": [
+                "bouttons",
+                "visage huileux"
+            ],
+            "categorie": "lesion"
+        },
+        {
+            "id": 2,
+            "nom": "Ecz\u00e9ma",
+            "symptomes": [
+                "je",
+                "ne"
+            ],
+            "categorie": "pathologie"
+        },
+        {
+            "id": 3,
+            "nom": "Dermatite herp\u00e9tiforme",
+            "symptomes": [
+                "test1",
+                " test02"
+            ],
+            "categorie": "pathologie"
+        }
+    ],
+    "medecins": [
+        {
+            "id": 0,
+            "nom": "HIHEA",
+            "prenom": "Ghust",
+            "tel": "91489000",
+            "adr": "K\u00e9gu\u00e9"
+        },
+        {
+            "id": 1,
+            "nom": "ANALLA",
+            "prenom": "Ace Guil",
+            "tel": "98756233",
+            "adr": "Ago\u00e8"
+        },
+        {
+            "id": 2,
+            "nom": "MED",
+            "prenom": "Medi01",
+            "tel": "96321548",
+            "adr": "Lom\u00e9"
+        }
+    ],
+    "patients": [
+        {
+            "id": 0,
+            "nom": "OLAITAN",
+            "prenom": "sem",
+            "tel": "79645440",
+            "adr": "Adidogom\u00e9",
+            "traitements": [
+                {
+                    "id": 0,
+                    "maladie": " Poux",
+                    "debut": "2022-01-25",
+                    "Fin": "2022-01-31",
+                    "Reussi": "Oui",
+                    "consultations": [
+                        {
+                            "id": 0,
+                            "medecin": "ANALLA Ace",
+                            "date consultation": "2022-01-25",
+                            "observations": [
+                                "tire",
+                                " ejx",
+                                "hjdf"
+                            ],
+                            "prescriptions": [
+                                "dhush",
+                                "njdh",
+                                "f"
+                            ],
+                            "rdv": ""
+                        },
+                        {
+                            "id": 1,
+                            "medecin": "ANALLA Ace",
+                            "date consultation": "2022-01-25",
+                            "observations": [
+                                "gf",
+                                "fg"
+                            ],
+                            "prescriptions": [
+                                "fgsrdfsx"
+                            ],
+                            "rdv": "pp"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "nom": "MELESSUSU",
+            "prenom": "Aristide",
+            "tel": "97564112",
+            "adr": "Adidogom\u00e9",
+            "traitements": [
+                {
+                    "id": 0,
+                    "maladie": "Ecz\u00e9ma",
+                    "debut": "2022-01-30",
+                    "Fin": "2022-01-30",
+                    "Reussi": "Oui",
+                    "consultations": [
+                        {
+                            "id": 0,
+                            "medecin": "HIHEA Ghust",
+                            "date consultation": "2022-01-30",
+                            "observations": [
+                                "obs1",
+                                "obs2"
+                            ],
+                            "prescriptions": [
+                                "tst"
+                            ],
+                            "rdv": ""
+                        },
+                        {
+                            "id": 1,
+                            "medecin": "MED Medi01",
+                            "date consultation": "2022-01-31",
+                            "observations": [
+                                "ob1",
+                                " ob3"
+                            ],
+                            "prescriptions": [
+                                "pres01",
+                                " presc03"
+                            ],
+                            "rdv": ""
+                        },
+                        {
+                            "id": 2,
+                            "medecin": "MED Medi01",
+                            "date consultation": "2022-01-31",
+                            "observations": [
+                                "hjk"
+                            ],
+                            "prescriptions": [
+                                "gyh"
+                            ],
+                            "rdv": "20221028"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nom": " KOMISSA",
+            "prenom": "Zotsu",
+            "tel": "98653214",
+            "adr": "Av\u00e9nou",
+            "traitements": []
+        }
+    ]
+}

@@ -1,12 +1,13 @@
+import getpass
+
+from pymsgbox import confirm
 from maladie import *
 from personne import *
-from consultation import *
 import os
 
 ma = Maladie()
 pa = Patient()
 med = Medecin()
-con = Consultation()
 
 
 def mainmenu():
@@ -77,7 +78,9 @@ def menu():
             print("2- Ajouter un patient")
             print("3- Modifier un patient")
             print("4- Afficher un patient")
-            print("5- Ajouter une consultation")
+            print("5- Ajouter un traitement")
+            print("6- Ajouter une consultation")
+            print("7- Finaliser un traitement")
             print("0- Retour au menu principal")
             choix = int(input("\nChoisissez une option: "))
             if choix == 1:
@@ -89,7 +92,11 @@ def menu():
             if choix == 4:
                 pa.afficher()
             if choix == 5:
-                con.add()
+                pa.add_traitement()
+            if choix == 6:
+                pa.add_consultation()
+            if choix == 7:
+                pa.end_traitement()
             if choix == 0:
                 os.system('clear')
                 menu()
@@ -108,7 +115,7 @@ def menu():
             if choix == 1:
                 read("users")
             if choix == 2:
-                add_user(username, str(input('Nouveau mot de passe: ')))
+                update_user(username, str(input('Nouveau mot de passe: ')))
             if choix == 3:
                 add_user({"username": str(input('Nom d''utilisateur: ')), "password": str(input('Mot de passe: '))})
             if choix == 0:
@@ -117,12 +124,17 @@ def menu():
                 break
             retour = str(input("\nRetourner au menu O/N?: "))
 
+    if confirm(title='Confirmation', text="Voulez-vous quitter l'application", buttons=['Oui', 'Non']) == 'Non':
+        menu()
+
 username = str(input('Nom d''utilisateur: '))
-password = str(input('Mot de passe: '))
+password = getpass.getpass('Mot de passe: ')
 if login(username, password):
     menu()
 else:
     print("Identifiants incorrects.")
+
+
 
 # with open('json/data.json') as myFile:
 #     file_data = json.load(myFile)
