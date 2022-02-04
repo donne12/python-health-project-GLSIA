@@ -9,7 +9,7 @@ now = datetime.now()
 
 
 class patient:
-    def __init__(self, nom: str, prenom: str, adresse: str, age: int,  consultations = {}, Analyse={} , numero: int=0):
+    def __init__(self, nom: str, prenom: str, adresse: str, age: int, consultations = {}, Analyse={} , numero: int=0):
         self.nom = nom.lower()
         self.prenom = prenom.lower()
         self.adresse = adresse.lower()
@@ -26,19 +26,38 @@ class patient:
         
         return self.nom + " " + self.prenom + " " + str(self.age) + " " + self.adresse+ " "
 
-    def afficherConsultation(self, nom  =" " ,prenom= " "):
-        
+    def listPatient():
+        patients = lire('fichier.json')['Patient']
+        for patient in patients:
+            print(str(patient['numero'])+': -'+str(patient['nom'].upper())+'  '+str(patient['prenom'].upper()))
+            print('---------------------------------------------------------------------------------\n')
+
+    def afficherConsultation(self,id = 0 , nom  =" " ,prenom= " "):
         data = lire("fichier.json")
         if( nom  !=" " and prenom != " " ):
             b= data["Patient"]
             for patient in  b:
-                    if((patient["nom"]==nom.lower()) and(patient["prenom"]==prenom.lower())):
-                        self.numero = patient["numero"]
-                        self.nom = patient["nom"]
-                        self.prenom = patient["prenom"]
-                        self.adresse = patient["adresse"]
-                        self.age = patient["age"]
-                        self.consultations = patient["consultations"]
+                if((patient["nom"]==nom.lower()) and(patient["prenom"]==prenom.lower())):
+                    self.numero = patient["numero"]
+                    self.nom = patient["nom"]
+                    self.prenom = patient["prenom"]
+                    self.adresse = patient["adresse"]
+                    self.age = patient["age"]
+                    self.consultations = patient["consultations"]
+        elif ( id != 0):
+            b = data["Patient"]
+            for patient in  b:
+                if(patient["numero"]== id):
+                    self.numero = patient["numero"]
+                    self.nom = patient["nom"]
+                    self.prenom = patient["prenom"]
+                    self.adresse = patient["adresse"]
+                    self.age = patient["age"]
+                    self.consultations = patient["consultations"]
+        else:
+            pass
+
+        
         print("liste des consultation de {} {}...".format(self.nom, self.prenom))
         print("\n")
         data = lire("fichier.json")
@@ -51,8 +70,9 @@ class patient:
                         for cle2, valeur2 in valeur.items():
                              print( cle2, "=", valeur2)
                         print("----------------")
+
     
-    def afficherAnalyse(self, nom  =" " ,prenom= " "):
+    def afficherAnalyse(self,id = 0, nom  =" " ,prenom= " "):
 
         data = lire("fichier.json")
         if( nom  !=" " and prenom != " " ):
@@ -65,6 +85,18 @@ class patient:
                         self.adresse = patient["adresse"]
                         self.age = patient["age"]
                         self.consultations = patient["consultations"]
+        elif ( id != 0):
+            b = data["Patient"]
+            for patient in  b:
+                if(patient["numero"]== id):
+                    self.numero = patient["numero"]
+                    self.nom = patient["nom"]
+                    self.prenom = patient["prenom"]
+                    self.adresse = patient["adresse"]
+                    self.age = patient["age"]
+                    self.consultations = patient["consultations"]
+        else:
+            pass
         print("liste des Analyse de {} {}...".format(self.nom, self.prenom))
         print("\n")
         data = lire("fichier.json")
@@ -80,7 +112,7 @@ class patient:
     
 
 
-    def consulter(self, nom  =" " ,prenom= " "):
+    def consulter(self,id = 0, nom  =" " ,prenom= " "):
         
         data = lire("fichier.json")
         if( nom  !=" " and prenom != " " ):
@@ -93,6 +125,18 @@ class patient:
                         self.adresse = patient["adresse"]
                         self.age = patient["age"]
                         self.consultations = patient["consultations"]
+        elif ( id != 0):
+            b = data["Patient"]
+            for patient in  b:
+                if(patient["numero"]== id):
+                    self.numero = patient["numero"]
+                    self.nom = patient["nom"]
+                    self.prenom = patient["prenom"]
+                    self.adresse = patient["adresse"]
+                    self.age = patient["age"]
+                    self.consultations = patient["consultations"]
+        else:
+            pass
         print("liste des consultation de {} {}...".format(self.nom, self.prenom))
         print("\n")
 
@@ -107,6 +151,7 @@ class patient:
               "gonflementGauche":verifier(input("Gonflement à  l'oiel  gauche?[O/N]: ")),
               "gouflementDroite":verifier(input("Gonflement  à  l'oiel  gauche?[O/N]: ")),
               "traitement":verifier(input("suivez vous un traitement ?[O/N]: ")),
+              
             }
             
       
@@ -123,7 +168,7 @@ class patient:
         print(self)
 
 
-    def  AnalyseRefractometre(self, nom  =" " ,prenom= " "):
+    def  AnalyseRefractometre(self,id = 0, nom  =" " ,prenom= " "):
         
         data = lire("fichier.json")
         if( nom  !=" " and prenom != " " ):
@@ -136,6 +181,18 @@ class patient:
                         self.adresse = patient["adresse"]
                         self.age = patient["age"]
                         self.analyse = patient["analyse"]
+        elif ( id != 0):
+            b = data["Patient"]
+            for patient in  b:
+                if(patient["numero"]== id):
+                    self.numero = patient["numero"]
+                    self.nom = patient["nom"]
+                    self.prenom = patient["prenom"]
+                    self.adresse = patient["adresse"]
+                    self.age = patient["age"]
+                    self.consultations = patient["consultations"]
+        else:
+            pass
         print("Analyse  de {} {}...".format(self.nom, self.prenom))
         print("\n")
         print("------------------------------------------------------")
@@ -228,27 +285,42 @@ class patient:
             else:
                    print("Erreur de creation du patient, veuillez reessayer !!")
 
-    def update(self):
-      
-        data = lire("fichier.json")
-        data["Patient"][self.numero] = {
-            "numero": self.numero,
-            "nom": self.nom,
-            "prenom": self.prenom,
-            "adresse": self.adresse,
-            "age": self.age,
-            "consultations": self.consultations,
-            
-        }
-        ecrire("fichier.json",data)
+    def update(self):      
+        try:
+            data = lire('fichier.json')
+            patients = data['Patient']
+            for patient in patients:
+                if patient['id'] == self.trouver():
+                    patient['nom'] = self.nom.lower()
+                    patient['prenom'] = self.prenom.lower()
+                    patient['adresse'] = self.adresse
+                    patient['age'] = self.age
+                    
+            ecrire('fichier.json',data)
+            print('Modification appliquées avec succès :-)')
+            return
+        except:
+            return print("Une erreur s'est produite durant l'opération :-( ")
     
-
+    
+    def delpatient(obj):
+        if obj.verification() :
+            data = lire('fichier.json')
+            try:
+                for patient in data['Patient']:
+                    if((patient["nom"]==obj.nom) and(patient["prenom"]==obj.prenom)):
+                        del data['Patient'][patient['id']-1]
+                        ecrire("fichier.json",data)
+                        return print('Suppression effectuée avec succès !!:-)')
+            except:
+                return print("Une erreur est surevue durant l'opération !! :-(")
+        return print('Impossible de supprimer un élément inexistant !!')
 #
-# p1= patient("A","z","a",18) 
+#p1= patient("A","z","a",18) 
 # p1.create()
 # #p1.consulter("Abal4o","za")
 # # print(p1)
-# # p1.afficherConsultation("Abal4o","za")
+#p1.afficherConsultation(1)
 # # p1.afficherConsultation()
 # # p1.afficherAnalyse()
 # p1.AnalyseRefractometre("Abalo","za")
