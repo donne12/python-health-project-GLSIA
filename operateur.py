@@ -1,7 +1,4 @@
-from typing import Dict
-
 import json
-
 
 def normalisation(fichier: str):
     try:

@@ -35,62 +35,56 @@ while tries_flag != "Close the program" :
                 print(" -------------------------------------------------------------------")
                 Options = input ("Entrer votre choix : ")
                 Options = Options.upper()
-                        
-                if Options == "1" :	 
-                        _ = os.system('cls')
-                        print("Enregistrons un patient...")
+                
+                # Section de création d'un patient
+                if Options == "1" :
+                    _ = os.system('cls')
+                    print("Enregistrons un patient...")
+                    nom = input("Entrer le nom du patient: ")
+                    prenom = input("Entrer le prenom du patient: ")
+                    adresse = input("Entrer l'adresse du patient: ")
+                    age = int (input("Entrer l'âge du patient: "))
+                    try:
+                        pat = patient(nom, prenom, adresse, age)
+                        pat.create()
+                        print("----------------------Patient ajouter avec success----------------------")
+                    except :
+                        print("Une erreur est surevenue lors de l'enregistrement du patient !! :-(")													#Admin mode --> Pateints Management    
+                
+                # Section de consultation de la liste des patients 
+                elif Options == "2" :
+                    _ = os.system('cls')
+                    print("Liste des patient...")	
+                    b= lire("fichier.json")["Patient"]
+                    for pat in  b:
+                        print("\n patient  numero             : ",pat["numero"])
+                        print("\nnom  du  patient             : ",pat["nom"])
+                        print("\nprenom  du  patient          : ",pat["prenom"])
+                        print("\nage du patient               : ",pat["age"])
+                        print("\nadress du patient            : ",pat["adresse"])
+                        print("-------------------------------------------------------------")
+                                
+                elif Options == "3" :
+                    try :
+                        _ = os.system('cls')		
+                        print("Consultation...")
                         nom = input("Entrer le nom du patient: ")
                         prenom = input("Entrer le prenom du patient: ")
-                        adresse = input("Entrer l'adresse du patient: ")
-                        age = int (input("Entrer l'âge du patient: "))
-                        try:
-                            pat = patient(nom, prenom, adresse, age)
-                            pat.create()
-                            print("----------------------Patient ajouter avec success----------------------")
-                        except :
-                            print("L'id du patien doit etre un entier ")													#Admin mode --> Pateints Management
-                                    
-                                
-                                        
-                elif Options == "2" :										
-                    # try :
-                        _ = os.system('cls')
-                        print("Liste des patient...")	
-                        # patient_ID = int(input("Enter l'ID du patient: "))
-                        data = lire("fichier.json")
-                        b= data["Patient"]
-                        for pat in  b:
-                            print("\n patient  numero             : ",pat["numero"])
-                            print("\nnom  du  patient             : ",pat["nom"])
-                            print("\nprenom  du  patient          : ",pat["prenom"])
-                            print("\nage du patient               : ",pat["age"])
-                            print("\nadress du patient            : ",pat["adresse"])
-                            print("---------------------------------------")
-                        
-                    # except :
-                    #     print("pas conpris")
-                                
-                elif Options == "3" :										
-                            try :
-                                _ = os.system('cls')		
-                                print("Consultation...")
-                                nom = input("Entrer le nom du patient: ")
-                                prenom = input("Entrer le prenom du patient: ")
-                                p1= patient("A","z","a",18) 
-                                p1.consulter(nom,prenom)
-                            except :
-                                print("patient  introuvable")
+                        p1= patient("A","z","a",18) 
+                        p1.consulter(nom,prenom)
+                    except :
+                        print("patient introuvable")
                 
-                elif Options == "4" :										
-                            try :
-                                _ = os.system('cls')	
-                                print("Analyse ...")
-                                nom = input("Entrer le nom du patient: ")
-                                prenom = input("Entrer le prenom du patient: ")
-                                p1= patient("A","z","a",18) 
-                                p1.AnalyseRefractometre(nom,prenom)
-                            except :
-                                print("patient  introuvable")
+                elif Options == "4" :
+                    try :
+                        _ = system('cls')	
+                        print("Analyse ...")
+                        nom = input("Entrer le nom du patient: ")
+                        prenom = input("Entrer le prenom du patient: ")
+                        p1= patient("A","z","a",18) 
+                        p1.AnalyseRefractometre(nom,prenom)
+                    except :
+                        print("patient  introuvable")
                                 
                 elif Options == "5" :										
                             try :
@@ -98,7 +92,7 @@ while tries_flag != "Close the program" :
                                 print("Liste  des consultation...")
                                 nom = input("Entrer le nom du patient: ")
                                 prenom = input("Entrer le prenom du patient: ")
-                                p1= patient("A","z","a",18) 
+                                p1= patient("A","z","a",18)
                                 p1.afficherConsultation(nom,prenom)
                             except :
                                 print("patient  introuvable")
@@ -128,7 +122,7 @@ while tries_flag != "Close the program" :
                     tries_flag = "Arrêt du programme"
                     break
                                 
-    if choix == 2 :																			
+    if choix == 2 :
         print("*****************************************\n|         Gestion des Maladies         |\n*****************************************")
         Password = input("votre mots de passe svp : ")
         while True :
@@ -176,17 +170,9 @@ while tries_flag != "Close the program" :
                             pass         
                         maladie = Maladie.getMaladie(ans)   
                         maladie.desc()
-                        ans = input("Voulez-vous modifier les informations de cette maladie ? Entrez 'U'....\n Voulez-vous supprimer cette maladie ? Entrez 'D'....: \n")
+                        ans = input("Voulez-vous modifier les informations de cette maladie ? Entrez 'U': ")
                         # Choix de suppression d'une maladie
-                        if ans.upper() == 'D':
-                            ans = input('Voulez-vous vraiment supprimer cette maladie? O/N : ')
-                            if ans.upper() == 'O':
-                                maladie.deleteMaladie()    
-                            else:
-                                pass
-                        
-                        # Choix de mise à jour d'une maladie
-                        elif ans.upper() == 'U':
+                        if ans.upper() == 'U':
                             system('cls')
                             ans = input('Voulez-vous modifier le nom? O/N: ')
                             if ans.upper() == 'O':
@@ -204,7 +190,7 @@ while tries_flag != "Close the program" :
                             else:
                                 pass
                             maladie.updateMaladie()
-                        
+                            maladie.desc()
                         else:
                             print('Choix incorrecte!!')
                             pass
@@ -222,29 +208,3 @@ while tries_flag != "Close the program" :
                     print("Mots de passe incorrecte !!!Trop  de tentative")
                     tries_flag = "Arrêt du programme"
                     break        
-    
-    # elif AdminOptions == "E" :															
-    #     break
-    
-    # else :
-    #     print("choix incorrect")
-    
-
-    
-
-
-#p2 = Patient.find(2)
-#p2.consulter()
-
-
-#print("\nLes resultats de la consultation de {} {}...".format(p2.nom, p2.prenom))
-#print(p2.listConslutation())
-"""print("Trouvons les gens\n")
-p = Patient.find(1)
-print(p)
-
-print(p2)
-pr = Patient.find(15)
-print(pr)"""
-# print("Faisons une recherche....\n")
-# recherche = input("Recherche: ")
