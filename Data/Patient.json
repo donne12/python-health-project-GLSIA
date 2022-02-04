@@ -1,0 +1,65 @@
+{
+    "patient": {
+        "U2vTF-OmEcQ-uva7c-0UOUZ": {
+            "nom": "Doe",
+            "prenom": "John",
+            "age": 22,
+            "adresse": "amadahomé",
+            "contact": "98784448",
+            "taille": "1,87",
+            "poids": "65,5",
+            "taux_glycémie": "0.60",
+            "groupe_sanguin": "B+",
+            "symp": [
+                "Fatigue",
+                "Toux",
+                "vomissements"
+            ]
+        },
+        "MNSFo-x2e8F-1mtei-umf6i": {
+            "nom": "Assah",
+            "prenom": "jonathan",
+            "age": 35,
+            "adresse": "adidogomé",
+            "contact": "70351247",
+            "taille": 1.89,
+            "poids": 85.0,
+            "taux_glycémie": 0.9,
+            "groupe_sanguin": "O-",
+            "symp": [
+                "allergie",
+                " fievre"
+            ]
+        },
+        "crwLs-colMd-rkZ2E-1F3c4": {
+            "nom": "taga",
+            "prenom": "donne",
+            "age": 26,
+            "adresse": "amadahomé",
+            "contact": "98784512",
+            "taille": 1.45,
+            "poids": 56.0,
+            "taux_glycémie": 0.5,
+            "groupe_sanguin": "A-",
+            "symp": [
+                "vomissements",
+                " allergie"
+            ]
+        },
+        "UeQna-9gzb7-oIubI-gnoC2": {
+            "nom": "kakam",
+            "prenom": "joel",
+            "age": 28,
+            "adresse": "adidoadin",
+            "contact": "8582145",
+            "taille": 1.0,
+            "poids": 0.85,
+            "taux_glycémie": 0.9,
+            "groupe_sanguin": "B-",
+            "symp": [
+                "allergie",
+                " vomissements"
+            ]
+        }
+    }
+}

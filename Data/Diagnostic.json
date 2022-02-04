@@ -1,0 +1,27 @@
+{
+    "diagnostic": {
+        "UeQna-10gzb7-oIubI-gnoC2": {
+            "patient": {
+                "nom": "doe",
+                "prenom": "john",
+                "poids": 45.0,
+                "taux_glycemie": 0.5,
+                "groupe_sanguin": "A-",
+                "symp": [
+                    "toux",
+                    " vomissements"
+                ]
+            },
+            "date": "11/01/2022",
+            "medecin": {
+                "nom": "williams",
+                "prenom": "junior",
+                "contact": "565656"
+            },
+            "traitements": {
+                "libelle" : [],
+                "decision" : "oui"
+            }
+        }
+    }
+}

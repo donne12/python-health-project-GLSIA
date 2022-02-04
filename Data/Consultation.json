@@ -1,0 +1,44 @@
+{
+    "consultation": {
+        "UeQna-9gzb7-oIubI-gnoC2": {
+            "patient": {
+                "nom": "doe",
+                "prenom": "john",
+                "age": 21,
+                "adresse": "lomé",
+                "contact": "4874544",
+                "poids": 45.0,
+                "taux_glycemie": 0.5,
+                "groupe_sanguin": "A-",
+                "symp": [
+                    "toux",
+                    " vomissements"
+                ]
+            },
+            "date_consult": "11/01/2022",
+            "medecin": {
+                "nom": "williams",
+                "prenom": "junior",
+                "contact": "565656"
+            },
+            "resultats": {
+                "libelle": "",
+                "date_result": ""
+            }
+        },
+        "kXYBC-0txzl-G0Sen-D3fc6": {
+            "patient": {
+                "nom": "jean",
+                "prenom": "luc",
+                "age": "25",
+                "adresse": "Lomé",
+                "contact": "98784512",
+                "poids": "45",
+                "taux_glycemie": "0.7",
+                "groupe_sanguin": "AB+",
+                "symp": [
+                    "fievre",
+                    " douleur"
+                ]
+            },
+            "date_consult": 
