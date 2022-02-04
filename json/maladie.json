@@ -1,0 +1,27 @@
+[
+    {
+        "nom": "corona",
+        "categorie": "new",
+        "symptome": "nauser intense"
+    },
+    {
+        "nom": "corona",
+        "categorie": "old",
+        "symptome": "azazaz"
+    },
+    {
+        "nom": "gros coeur",
+        "categorie": "old",
+        "symptome": "la masse du coeur augmente plus que la normale "
+    },
+    {
+        "nom": "angine de poitrine ",
+        "categorie": "coronnaire",
+        "symptome": "des angines "
+    },
+    {
+        "nom": "cardiomyopathie",
+        "categorie": "maladie du muscle cardiaque ",
+        "symptome": "dypsnée et essouflement "
+    }
+]

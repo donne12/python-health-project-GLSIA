@@ -1,0 +1,22 @@
+[
+    {
+        "lib": "old",
+        "desc": "cdcd"
+    },
+    {
+        "lib": "coronnaire",
+        "desc": "des maladies artÃƒÆ’Ã‚Â¨res"
+    },
+    {
+        "lib": "maladie du muscle cardiaque ",
+        "desc": "maladie affectant le muscle du coeur"
+    },
+    {
+        "lib": "Maladie des valves cardiaque",
+        "desc": "c'est une maladies touchant le dysfonctionnement d'une valve"
+    },
+    {
+        "lib": "Maladies péricarde",
+        "desc": "Maladies touchant les artères péricardiophrénique"
+    }
+]

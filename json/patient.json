@@ -1,0 +1,113 @@
+[
+    {
+        "nom": "TODJRO",
+        "prenom": "Patrice",
+        "age": 19,
+        "consultation": [
+            {
+                "poid": 50,
+                "temp": 40,
+                "glycemie": "oui",
+                "cholesterole": "oui",
+                "coloration_yeux": "rouge vif",
+                "coloration_bouche": "pale",
+                "coloration_doigt": "pale",
+                "coloration_main": "pale",
+                "blessure": "non",
+                "choque_pointe": "non",
+                "analyse": "non",
+                "anemie": "non",
+                "ECG": 12,
+                "diagnostic": {
+                    "diag": "ce patient vivra encore beacoup plus longtemp que la moyenne",
+                    "maladie": "rien"
+                },
+                "date_consult": "Sunday le 30 January 2022 ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â  16h:04m:58s"
+            }
+        ],
+        "traiter": false
+    },
+    {
+        "nom": "TODJRO",
+        "prenom": "Kesita",
+        "age": 16,
+        "consultation": [
+            {
+                "poid": 46,
+                "temp": 78,
+                "glycemie": true,
+                "cholesterole": false,
+                "coloration_yeux": "normal",
+                "coloration_bouche": "rouge clair",
+                "coloration_doigt": "normal",
+                "coloration_main": "pale",
+                "blessure": false,
+                "choque_pointe": false,
+                "analyse": true,
+                "anemie": false,
+                "ECG": 90,
+                "diagnostic": {
+                    "diag": "malade ma sa va aller",
+                    "maladie": "palu"
+                },
+                "date_consult": "Sunday le 30 January 2022 ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â  16h:13m:43s"
+            },
+            {
+                "poid": 12,
+                "temp": 45,
+                "glycemie": true,
+                "cholesterole": false,
+                "coloration_yeux": "bleu",
+                "coloration_bouche": "bleu",
+                "coloration_doigt": "bleu",
+                "coloration_main": "bleu",
+                "blessure": false,
+                "choque_pointe": false,
+                "analyse": false,
+                "anemie": false,
+                "ECG": 44,
+                "diagnostic": {
+                    "diag": "il na rien",
+                    "maladie": "corona"
+                },
+                "date_consult": "Sunday le 30 January 2022 a 16h:23m:34s"
+            }
+        ],
+        "traiter": false
+    },
+    {
+        "nom": "AGBOLOSSOU",
+        "prenom": "Gedeon Benoi Koffi",
+        "age": 20,
+        "consultation": [],
+        "traiter": false
+    },
+    {
+        "nom": "BADJALIMBE ",
+        "prenom": "Felix",
+        "age": 19,
+        "consultation": [
+            {
+                "poid": 69,
+                "temp": 38,
+                "glycemie": false,
+                "cholesterole": true,
+                "coloration_yeux": "noir",
+                "coloration_bouche": "bleu ",
+                "coloration_doigt": "rouge",
+                "coloration_main": "blanc",
+                "blessure": true,
+                "choque_pointe": true,
+                "analyse": false,
+                "anemie": true,
+                "ECG": 2,
+                "diagnostic": {
+                    "diag": "le patient peut avoir un probleme au niveau des muscles cardiaque",
+                    "maladie": "cardiomyopathie"
+                },
+                "date_consult": "Monday le 31 January 2022 a 10h:31m:22s"
+            }
+        ],
+        "traiter": false
+    }
+]
