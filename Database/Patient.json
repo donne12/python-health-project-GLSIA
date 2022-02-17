@@ -1,0 +1,54 @@
+{
+    "patient": [
+        {
+            "id": 0,
+            "nom": "ali",
+            "prenom": "guntan",
+            "age": "45",
+            "adresse": "kebevi",
+            "contact": "33366512",
+            "poids": "50",
+            "taux_glycémie": "0.7",
+            "groupe_sanguin": "B+",
+            "symptomes": [
+                "malformation",
+                " fievre"
+            ],
+            "consultations": [
+                {
+                    "nom_medoc": "william",
+                    "prenom_medoc": "levin",
+                    "contact": "91121111",
+                    "date_consult": "2022-02-15"
+                }
+            ],
+            "resultats": [
+                {
+                    "libelle": "patient atteint de vih",
+                    "date_result": "2022-02-16"
+                },
+                {
+                    "libelle": "cholera",
+                    "date_result": "2022-02-16"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "nom": "sama",
+            "prenom": "kowou",
+            "age": "18",
+            "adresse": "ablime",
+            "contact": "9900000",
+            "poids": "45",
+            "taux_glycémie": "0.54",
+            "groupe_sanguin": "A-",
+            "symptomes": [
+                "allergie",
+                " rhume"
+            ],
+            "consultations": [],
+            "resultats": []
+        }
+    ]
+}

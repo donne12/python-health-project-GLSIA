@@ -1,0 +1,91 @@
+{
+    "maladie": [
+        {
+            "id": 0,
+            "nom": "diabete type 1",
+            "symptomes": [
+                "Fatigue",
+                "Crampes abdominales",
+                "Soif intense",
+                "Faim exageree",
+                "perte de poids",
+                "picotements ou engourdissements"
+            ],
+            "département": "Multidisciplinaire"
+        },
+        {
+            "id": 1,
+            "nom": "diabete type 1",
+            "symptomes": [
+                "Fatigue",
+                "Perte de poids inexpliquee",
+                "Plaies qui guerissent mal",
+                "Vision embrouillee",
+                "Irritabilite",
+                "insensibilite "
+            ],
+            "département": "Multidisciplinaire"
+        },
+        {
+            "id": 2,
+            "nom": "Asthme",
+            "symptomes": [
+                "toux seche",
+                "respiration rapide",
+                "pale",
+                "fatigue"
+            ],
+            "département": "Multidisciplinaire"
+        },
+        {
+            "id": 3,
+            "nom": "Mucoviscidose",
+            "symptomes": [
+                "Secretions dans le nez et les oreilles",
+                "Malabsorption des aliments"
+            ],
+            "département": "Multidisciplinaire"
+        },
+        {
+            "id": 4,
+            "nom": "Pathologies_thyroidiennes",
+            "symptomes": [
+                "Constipation",
+                "Croissance Retardee",
+                "Puberte retardee",
+                "Rythme cardiaque ralenti",
+                "Prise de poids",
+                "Perte de cheveux"
+            ],
+            "département": "Multidisciplinaire"
+        },
+        {
+            "id": 5,
+            "nom": "Drepanocytose",
+            "symptomes": [
+                "Un ictere (ou jaunisse)" ,
+                "Un teint pele",
+                "Des douleurs abdominales", 
+                "Une anemie" ,
+                "Convulsions" ,
+                "Coma" ,
+                "Paralysies" ,
+                "Insuffisance cardiaque" ,
+                "Hematurie" 
+            ],
+            "département": "Pediatrie medicale"
+        },
+        {
+            "id": 6,
+            "nom": "Epilepsie",
+            "symptomes": [
+                "secousses musculaires incontrelees", 
+                "hallucinations sensorielles" ,
+                "fourmillements", 
+                "mouvements automatiques", 
+                "la confusion temporaire"
+            ],
+            "département": "Pediatrie medicale"
+        }
+    ]
+}
