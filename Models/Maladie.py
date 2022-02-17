@@ -7,6 +7,7 @@ class Maladie:
     id : str
     nom: str
     symptomes: list
+    departement: str
 
 
     # constructeur
